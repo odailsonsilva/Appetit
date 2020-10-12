@@ -1,0 +1,54 @@
+
+.form-div{
+  width: 100%;
+  position: relative;
+  font-size: 1.6rem;
+  padding-top: 20px;
+}
+
+.form-div .form-input{
+  position: relative;
+  border: none;
+  width: 100%;
+  margin-top: 24px;
+
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 5px;
+  height: 56px;
+  padding-left: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-div .form-label{
+  position: absolute;
+  left: 16px;
+  top: calc(50% + 10px);
+  color: #aaa;
+  transition: top 0.3s ease, 
+              font-size 0.3s ease,
+              color 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.form-label{
+  text-transform: initial;
+}
+
+
+.form-div input:valid + .form-label,
+.form-div .form-input:focus + .form-label
+{
+  top: 35px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ff8822;
+  z-index: 2;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.form-div input:valid, .form-div input:focus{
+  border: 2px solid #FF8822;
+  z-index: 1;
+}

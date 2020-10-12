@@ -1,0 +1,82 @@
+#container-login{
+  width: 100vw;
+  height: 100vh;
+  max-width: 432px;
+  max-height: 710px;
+
+  display: flex;
+  margin: 40px auto 0;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  
+  box-sizing: border-box;
+}
+
+
+#container-login main, 
+#container-login form
+{
+  width: 100%;
+  max-width: 432px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container-login main h3{
+  margin-top: 40px;  
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+#container-login main p{
+  margin: 16px 0 16px;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+
+#container-login form a{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+
+  margin: 37px 0 37px;
+
+  color: #000;
+}
+
+#container-login form .btn-entry{
+  width: 328px;
+  height: 48px;
+
+  background: #ff8822;
+  border-radius: 100px;
+
+  border: none;
+
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+
+  margin-bottom: 64px;
+  cursor: pointer;
+}
+
+#container-login form .btn-entry:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#container-login footer p{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  color: rgba(0, 0, 0, 0.56);
+}
