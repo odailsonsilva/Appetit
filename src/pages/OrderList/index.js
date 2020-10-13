@@ -1,11 +1,12 @@
 import React from 'react';
 
+import SideBar from '../../components/SideBar/SideBar'
 import './style.css'
 
 function OrderList() {
   return (
     <div>
-      <h1>Lista de Pedidos</h1>
+      <SideBar />
     </div>
   )
 }
