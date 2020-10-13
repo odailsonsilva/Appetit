@@ -4,6 +4,7 @@ import SideBar from '../../components/SideBar/SideBar'
 import BoxItem from '../../components/BoxItem'
 import BtnAdd from '../../components/BtnAdd'
 import InputSearch from '../../components/InputSearch'
+import Header from '../../components/Header'
 
 
 import './style.css'
@@ -14,14 +15,7 @@ function OrderList() {
       <SideBar />
       <div className="container">
         <div className="container_main">
-          <div className="header_profile">
-            <span className="profile_log" ></span>
-          </div>
-          
-          <header>
-            <h3>Olá, Marcel!</h3>
-          </header>
-
+          <Header />
           <div>
             <BtnAdd />
             <InputSearch />
