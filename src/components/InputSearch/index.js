@@ -8,9 +8,9 @@ import IconFilter from '../../assets/imgs/icon-filter.svg'
 export default function Index(props) {
   return (
       <form className="input_search">
-        <img  src={IconSearch}/>
-        <input type="text" placeholder="Procure o pedido aqui..."/>
-        <img  src={IconFilter}/>
+        <label htmlFor="search" className="cursor"><img  src={IconSearch}/></label>
+        <input type="text" placeholder="Procure o pedido aqui..." id="search"/>
+        <img  src={IconFilter} className="cursor"/>
       </form>
   )
 }

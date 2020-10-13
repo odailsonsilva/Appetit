@@ -1,0 +1,16 @@
+.history_container{
+  margin: 10px 0;
+}
+
+.history_container h3{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+
+  padding: 2px 4px;
+  margin-bottom: 16px;
+}
+
+.history_container .box_item{
+  margin-bottom: 8px;
+}
