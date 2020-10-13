@@ -1,0 +1,41 @@
+.box_item{
+  margin: 0 auto;
+  padding: 16px;
+
+  width: 90%;
+  height: 74px;
+
+  background-color: #fff;
+  box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  display: flex;
+  position: relative;
+}
+
+.box_item img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.box_item  h6{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+}
+
+.box_item .container_infos p{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.box_item .container_total{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+

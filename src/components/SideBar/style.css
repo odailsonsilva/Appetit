@@ -70,7 +70,9 @@
               opacity .3s ease;
 }
 
-#sidebar .menu ul li a.active{
+#sidebar .menu ul li a.active,
+#sidebar .menu ul li a.active
+{
   opacity: 1;
   border-left: 2px solid #fff;
 }

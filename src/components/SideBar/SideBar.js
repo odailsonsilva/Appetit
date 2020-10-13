@@ -45,10 +45,6 @@ class SideBar extends React.Component{
       this.setState({
         activeLink: true
       })
-    }else{
-      this.setState({
-        activeLink: false
-      })
     }
   }
 
@@ -73,12 +69,15 @@ class SideBar extends React.Component{
 
               <ul className={this.state.show}>
                 <li><Link to="/lista-de-pedidos" 
-                 className={this.state.activeLink ? 'active' : ''} 
+                 className={this.state.activeLink ? 'active a' : ''} 
                  onClick={this.funActiveLink}
                 >
                   EM ABERTOS
                 </Link></li>
-                <li><Link >ENCERRADOS</Link></li>
+                <li><Link 
+                   className={this.state.activeLink ? 'active b' : ''} 
+                   onClick={this.funActiveLink}
+                >ENCERRADOS</Link></li>
               </ul>
             
             </li>
