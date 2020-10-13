@@ -12,13 +12,13 @@ class Index extends React.Component {
     password: ""
   }
 
-  recoverValeuEmail= (value) => {
+  recoverValeuEmail = (value) => {
     this.setState({
       email: value
     })
   }
 
-  recoverValeuPassword= (value) => {
+  recoverValeuPassword = (value) => {
     this.setState({
       password: value
     })

@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 import Login from './pages/Login'
-import RequestList from './pages/RequestList'
+import OrderList from './pages/OrderList'
 
 export default function Routes(){
 
@@ -10,7 +10,7 @@ export default function Routes(){
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Login}/>
-        <Route path="/lista-de-pedidos" component={RequestList}/>  
+        <Route path="/lista-de-pedidos" component={OrderList}/>  
       </Switch>
     </BrowserRouter>
   )
