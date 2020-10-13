@@ -3,6 +3,7 @@ import React from 'react';
 import SideBar from '../../components/SideBar/SideBar'
 import BoxItem from '../../components/BoxItem'
 import BtnAdd from '../../components/BtnAdd'
+import InputSearch from '../../components/InputSearch'
 
 
 import './style.css'
@@ -23,6 +24,7 @@ function OrderList() {
 
           <div>
             <BtnAdd />
+            <InputSearch />
           </div>
           {/* <BoxItem /> */}
         </div>
