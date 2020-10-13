@@ -29,3 +29,8 @@
   color: rgba(0, 0, 0, 0.88);
   font-weight: 400;
 }
+
+.header_container .icon_back{
+  top: 0;
+  left: 0;
+}
