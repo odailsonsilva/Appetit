@@ -1,0 +1,15 @@
+.item_list_conteiner{
+  display: flex;
+  margin: 20px 16px 20px;
+  align-items: center;
+}
+
+.divisor_li{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  width: 90%;
+  margin-left: 10px;
+}
+
+.item_list_conteiner img{
+  border-radius: 100px;
+}

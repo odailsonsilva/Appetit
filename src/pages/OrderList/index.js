@@ -6,6 +6,7 @@ import BtnAdd from '../../components/BtnAdd'
 import InputSearch from '../../components/InputSearch'
 import Header from '../../components/Header'
 import HistoryOrder from '../../components/HistoryOrder'
+import HeaderImg from '../../components/HeaderImg'
 
 import Profile from '../../assets/imgs/profile/profile.svg'
 
@@ -17,10 +18,12 @@ class OrderList extends React.Component {
     return (
       <div className="container_order_list">
         <SideBar />
-        <div className="span-sideBar"></div>
-        <div className="container">
+        <div></div>
+        <div className="container_order">
+
           <div className="container_main">
-            <Header />
+          <HeaderImg />
+            <Header title="Olá, Pedro!"/>
             <div>
               <BtnAdd/>
               <InputSearch />
@@ -43,6 +46,7 @@ class OrderList extends React.Component {
               <BoxItem  img={Profile} title="titulo" text="paragrafo" value="R$ 3,50"/>
             </HistoryOrder>
           </div>
+
         </div>
       </div>
     )

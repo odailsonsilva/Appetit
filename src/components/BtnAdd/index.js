@@ -7,7 +7,7 @@ import IconAdd from '../../assets/imgs/icon-add.svg'
 
 export default function Index(props) {
   return (
-    <Link>
+    <Link to="/novo-pedido">
       <div className="btn_add">
         <img src={IconAdd} alt=""/>
         <div className="container_infos">

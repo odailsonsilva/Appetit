@@ -1,14 +1,13 @@
 .container_order_list{
+  background: #E5E5E5;
   display: grid;
   grid-template-columns: 342px 1fr;
-
-  background: #E5E5E5;
-
 }
 
-.container_order_list .container{
+.container_order_list .container_order{
   width: 90%;
   margin: 0 auto;
-
 }
+
+
 

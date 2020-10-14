@@ -50,7 +50,7 @@ class SideBar extends React.Component{
 
   render(){
     return(
-      <nav id="sidebar">
+      <aside id="sidebar">
         <img src={LogoFE} alt="" className="logo"/>
 
         <ul className="menu">
@@ -98,7 +98,7 @@ class SideBar extends React.Component{
 
         <p>Infoway Gestão em Saúde ©, 2020.</p>
   
-      </nav>
+      </aside>
       
     )
   }

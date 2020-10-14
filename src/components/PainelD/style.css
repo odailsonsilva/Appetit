@@ -1,0 +1,25 @@
+.sticky{
+  position: sticky;
+  top: 76px;
+}
+
+.painel_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_container_painel{
+  margin-bottom: 100px;
+}
+
+.painel_container  img{
+  margin-bottom: 28px;
+}
+
+.painel_container  p{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: rgba(0, 0, 0, 0.54);
+}

@@ -1,0 +1,14 @@
+.container_list_item{
+  margin-left: 56px;
+}
+.container_list_item h3{
+  margin-top: 16px;
+}
+
+.list_item_container{
+  list-style-type: none;
+}
+
+.divisor_lists{
+  border-bottom: 8px solid rgba(0, 0, 0, 0.08);;
+}
