@@ -1,23 +1,25 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import './style.css'
-
 import IconBack from '../../assets/imgs/icon-back.svg'
+import './style.css'
 
 export default function index(props) {
   return (
-    <div >
-      <div className="header_profile">
-        <span className="profile_log" ></span>
-      </div>
-      
+    <div className={props.none_margin ? "header_component none_margin" : "header_component"}>
       <header className="header_container">
-        <Link to="/lista-de-pedidos" >
-          <img src={props.activeIconBack ? IconBack : ''}/>
-        </Link>
-        <h3>Olá, Marcel!</h3>
+        {
+          props.showIconBack ? 
+            <Link to={props.route}>
+              <img src={IconBack} alt="voltar"/>
+            </Link> 
+          : ''
+        }
+        
+        <h3>{props.title}</h3>
+
       </header>
+      <div className="line_bottom"></div>
     </div>
   )
 }

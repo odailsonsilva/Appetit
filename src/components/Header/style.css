@@ -1,26 +1,19 @@
-.container_main .header_profile{
-  width: 100%;
-  height: 72px;  
-
-  position: relative;
+.header_component{
+  margin: 0 40px;
 }
 
-.container_main .profile_log{
-  position: absolute;
-  top: 16px;
-  right:0;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-image: url(../../assets/imgs/profile/profile.svg);
+.header_component.none_margin{
+  margin:0;
 }
 
 .header_container{
-  border-bottom: 2px solid #ff8822;
-  width: 224px;
+  width: 100%;
   padding-bottom: 10px;
+}
+
+.header_container{
+  position: sticky;
+  top: 0;
 }
 
 .header_container h3{
@@ -30,7 +23,7 @@
   font-weight: 400;
 }
 
-.header_container .icon_back{
-  top: 0;
-  left: 0;
+.line_bottom{
+  border-bottom: 2px solid #ff8822;
+  width: 228px;
 }
