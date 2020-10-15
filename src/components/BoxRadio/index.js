@@ -1,27 +1,20 @@
-import styled from 'styled-components'
+import React from 'react'
 
-export const BoxInput = styled.div `
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  width: 90%;
-  height: 56px;
+import {Container} from './style'
 
-  margin-top: 16px;
-`
+export default function index(props) {
 
+  return (
+    <>
+    <Container > 
+      <input value={0} type="radio" name="input_radio" id="input_radio"/>
+      <label htmlFor="input_radio">Milho</label>
+    </Container>
 
-
-
-// import React from 'react'
-
-// import './style.css'
-
-// export default function index() {
-//   return (
-//     <form>
-//       <input type="radio" value="ola"/>
-//       <input type="radio" value="ola"/>
-//     </form>
-//   )
-// }
+    <Container > 
+      <input value={1} type="radio" name="input_radio" id="input_radio2"/>
+      <label htmlFor="input_radio2">Arroz</label>
+    </Container>
+    </>
+  )
+}

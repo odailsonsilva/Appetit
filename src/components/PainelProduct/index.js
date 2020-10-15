@@ -2,22 +2,36 @@ import React from 'react';
 import './style.css';
 
 import Header from '../../components/Header'
-import {BoxInput} from '../../components/BoxRadio'
+import BoxInput from '../../components/BoxRadio'
 import {Btn} from '../Btn'
 import ProfileImg from '../../assets/imgs/profile/profile.svg'
+import CartBar from '../CartBar'
 
-function PainelTwo(props) {
-  return (
+class PainelTwo extends React.Component {
+
+  state = {
+    activeNextPage: false
+  }
+
+  selectRadio = e => {
+    this.setState({
+      activeNextPage: true
+    })
+  }
+
+  render(){
+    return (
       <div className="scrollE">
         <div className="header_container_painel_two">
           <Header 
-            title={props.title} 
-            route={props.route} 
-            icon={props.showIconBack}/>
+            title={this.props.title} 
+            route={this.props.route} 
+            icon={this.props.showIconBack}/>
         </div>
+      
 
         <div className="container_info_painel">
-          <p>{props.p}</p>
+          <p>{this.props.p}</p>
 
           <div className="product_detail_order">
             <img src={ProfileImg} alt=""/>
@@ -27,20 +41,8 @@ function PainelTwo(props) {
             </div>
           </div>
 
-          <div className="product_type">
-            <BoxInput>
-              <label htmlFor="">
-                <input type="radio" name="type_prod"/>
-                Milho
-              </label>
-            </BoxInput>
-
-            <BoxInput>
-              <label htmlFor="">
-                <input type="radio" name="type_prod"/>
-                Arroz
-              </label>
-            </BoxInput>
+          <div className="product_type" >
+            <BoxInput onClick={this.selectRadio}></BoxInput>
           </div>
           
         </div>
@@ -51,8 +53,12 @@ function PainelTwo(props) {
           <p>Observações</p>
           <input type="text" placeholder="Observações"/>
         </div>  
+        
+        <CartBar ></CartBar>
       </div> 
     ); 
+  }
 }
 
-export default PainelTwo;
+
+export default PainelTwo
