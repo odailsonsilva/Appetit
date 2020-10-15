@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 import BoxInput from '../../components/BoxRadio'
 import {Btn} from '../Btn'
 import ProfileImg from '../../assets/imgs/profile/profile.svg'
-import CartBar from '../CartBar'
+import CartBarOne from '../CartBarOne'
 
 class PainelTwo extends React.Component {
 
@@ -54,7 +54,7 @@ class PainelTwo extends React.Component {
           <input type="text" placeholder="Observações"/>
         </div>  
         
-        <CartBar ></CartBar>
+        <CartBarOne/>
       </div> 
     ); 
   }

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export const ContainerBar = styled.div` 
   width: 100%;
@@ -28,7 +29,7 @@ export const ContainerBar = styled.div`
     }
   }
 
-  button{
+  a{
     background: #ff8822;
     color: #fff;
     border-radius: 5px;

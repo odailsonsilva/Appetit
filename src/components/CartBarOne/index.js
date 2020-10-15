@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {MdAdd, MdRemove} from 'react-icons/md'
 
 import {ContainerBar} from'./style'
@@ -12,10 +13,10 @@ export default function index() {
         <MdAdd size={24} color="ff8822"/>
       </div>
       
-      <button>
+      <Link to="/novo-pedido/checkout-product">
         Adicionar
         <span>R$ 3,50</span>
-      </button>
+      </Link>
     </ContainerBar>
   )
 }

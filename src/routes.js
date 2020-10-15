@@ -17,6 +17,7 @@ export default function Routes(){
         <Route path="/novo-pedido" component={NewOrder}/> 
         <Route path="/pedidos-do-usuario/:id" component={UserOrder}/> 
         <Route path="/detalhes-do-produto/:id" component={ProductDetails}/> 
+        <Route path="/novo-pedido/checkout-product" component={NewOrder}/> 
       </Switch>
     </BrowserRouter>
   )

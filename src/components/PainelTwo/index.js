@@ -8,6 +8,7 @@ import ListItem from '../../components/ListItem'
 import ItemLi from '../../components/ItemLi'
 import {Btn} from '../Btn'
 import InputSearch from '../InputSearch'
+import CheckoutBar from '../CheckoutBar'
 
 function PainelTwo(props) {
   return (
@@ -53,7 +54,7 @@ function PainelTwo(props) {
   
         <Btn to="" className="btn_next">Avancar</Btn>
       
-        
+        <CheckoutBar />
       </div> 
     ); 
 }
