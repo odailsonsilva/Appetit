@@ -10,7 +10,10 @@ export default function Index(props) {
       <form className="input_search">
         <label htmlFor="search" className="cursor"><img  src={IconSearch}/></label>
         <input type="text" placeholder="Procure o pedido aqui..." id="search"/>
-        <img  src={IconFilter} className="cursor"/>
+        {
+          props.filterActive ? 
+          <img  src={IconFilter} className="cursor"/> : ''
+        }
       </form>
   )
 }

@@ -4,11 +4,11 @@ import './style.css';
 import Header from '../../components/Header'
 import Illustration from '../../assets/imgs/Illustration.svg'
 
-function PainelD() {
+function PainelD(props) {
   return (
       <div className="sticky">
         <div className="header_container_painel">
-          <Header title="Novo pedido" showIconBack route="/lista-de-pedidos" classFixed="header_fixed"/>
+          <Header title="Novo pedido" showIconBack route="/lista-de-pedidos" classFixed="header_fixed" icon={props.showIconBack}/>
         </div>
 
         <div className="painel_container">

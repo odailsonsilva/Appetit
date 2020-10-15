@@ -13,3 +13,12 @@
 .item_list_conteiner img{
   border-radius: 100px;
 }
+
+.item_list_conteiner p{
+  margin-left: 16px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+
+  color: rgba(0, 0, 0, 0.87);
+}

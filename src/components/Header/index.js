@@ -9,11 +9,11 @@ export default function index(props) {
     <div className={props.none_margin ? "header_component none_margin" : "header_component"}>
       <header className="header_container">
         {
-          props.showIconBack ? 
+          props.icon ? 
             <Link to={props.route}>
               <img src={IconBack} alt="voltar"/>
             </Link> 
-          : ''
+          : <div className="img_none"></div>
         }
         
         <h3>{props.title}</h3>

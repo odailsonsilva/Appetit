@@ -4,7 +4,7 @@ import SideBar from '../../components/SideBar/SideBar'
 import BoxItem from '../../components/BoxItem'
 import Header from '../../components/Header'
 import HistoryOrder from '../../components/HistoryOrder'
-
+import HeaderImg from '../../components/HeaderImg'
 import Profile from '../../assets/imgs/profile/profile.svg'
 
 import './style.css'
@@ -18,6 +18,7 @@ function NewOrder() {
 
         <div className="container">
           <div className="container_main">
+          <HeaderImg />
             <Header showIconBack route="/lista-de-pedidos" title="Pedidos de Luiz" none_margin/>
             
             <HistoryOrder>

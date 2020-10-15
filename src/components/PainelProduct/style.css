@@ -55,3 +55,45 @@
 .scrollE .img_none{
   margin-bottom: 28px;
 }
+
+
+/* Style DIV: product_detail_order   */
+.product_detail_order{
+  display: flex;
+  margin: 40px 0 24px 0;
+}
+
+.product_detail_order img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+
+/*area dos inputs de tipo*/
+.product_type input[type='radio']{
+  padding: 16px;
+  display: inline-block;
+}
+
+/*divisor*/
+.divisor_lists{
+  border-bottom: 8px solid rgba(0, 0, 0, 0.08);
+  margin-top: 24px;
+}
+
+/* area de observação */
+.comments_area{
+  margin: 24px 40px 0;
+}
+
+.comments_area input{
+  margin-top: 24px;
+  margin-bottom: 250px;
+
+  padding: 16px;
+  width: 90%;
+
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 5px;
+}

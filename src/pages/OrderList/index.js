@@ -26,7 +26,7 @@ class OrderList extends React.Component {
             <Header title="Olá, Pedro!" none_margin/>
             <div>
               <BtnAdd/>
-              <InputSearch />
+              <InputSearch filterActive/>
             </div>
             <HistoryOrder>
               <BoxItem  img={Profile} title="titulo" text="paragrafo" value="R$ 3,50"/>
