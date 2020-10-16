@@ -34,7 +34,7 @@ class PainelTwo extends React.Component {
           <p>{this.props.p}</p>
 
           <div className="product_detail_order">
-            <img src={ProfileImg} alt=""/>
+            <img src="https://abrilmdemulher.files.wordpress.com/2019/01/cuscuz-paulista-moderno.jpg?quality=90&strip=info&w=680&h=453&crop=1" alt=""/>
             <div>
               <h6>Cuscuz completo</h6>
               <p>R$ 3,25</p>

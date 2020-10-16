@@ -4,8 +4,10 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Login from './pages/Login'
 import OrderList from './pages/OrderList'
 import NewOrder from './pages/NewOrder'
-import UserOrder from './pages/UserOrder'
+import UserOrder from './store/UserOrder'
 import ProductDetails from './pages/ProductDetails'
+import ClientSelect from './pages/ClientSelect'
+import Payment from './pages/Payment'
 
 export default function Routes(){
 
@@ -17,7 +19,10 @@ export default function Routes(){
         <Route path="/novo-pedido" component={NewOrder}/> 
         <Route path="/pedidos-do-usuario/:id" component={UserOrder}/> 
         <Route path="/detalhes-do-produto/:id" component={ProductDetails}/> 
-        <Route path="/novo-pedido/checkout-product" component={NewOrder}/> 
+        <Route path="/novo-pedido/checkout-product" component={NewOrder}/>
+        <Route path="/selecionar-cliente" component={ClientSelect}/>
+        <Route path="/selecionar-cliente/checkout-client" component={ClientSelect}/>
+        <Route path="/status-de-pagamento" component={Payment}/>
       </Switch>
     </BrowserRouter>
   )

@@ -4,9 +4,9 @@ import './style.css'
 
 export default function index(props) {
   return (
-      <Link to="/detalhes-do-produto/1">
+      <Link to={props.router ? "/detalhes-do-produto/1" : ""}>
         <li className="item_list_conteiner">
-            <img src={props.img} alt="imagem-produto"/>
+            <img src={props.url} alt="imagem-produto"/>
             <p>{props.title}</p>
         </li>
         {
