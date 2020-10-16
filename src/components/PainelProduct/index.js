@@ -42,7 +42,7 @@ class PainelTwo extends React.Component {
           </div>
 
           <div className="product_type" >
-            <BoxInput onClick={this.selectRadio}></BoxInput>
+            <BoxInput></BoxInput>
           </div>
           
         </div>
