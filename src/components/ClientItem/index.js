@@ -1,20 +1,36 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
 import { InputClient } from './styles';
 
 function ClienItem(props) {
   const [selectedClient, setSelectedClient] = useState(false)
-  const [click, setClick] = useState(0)
+  const [quant, setQuant] = useState(null)
 
   function handleSelectedClien(){
 
-    if(selectedClient === false){
+    if(selectedClient == false){
        setSelectedClient(true)
-       setClick(1)
-       props.clientClick(click)
+       if(props.id == 1){
+        setQuant(quant + 1)
+       }else  if(props.id == 2){
+        setQuant(quant + 1)
+       }else  if(props.id == 3){
+        setQuant(quant + 1)
+       }else  if(props.id == 4){
+        setQuant(quant + 1)
+       }else  if(props.id == 5){
+        setQuant(quant + 1)
+       }else  if(props.id == 6){
+        setQuant(quant + 1)
+       }
+
+
     }else{
       setSelectedClient(false)
+      if(props.id == 1){
+        setQuant(quant - 1)
+       }
     }
   }
 
@@ -22,7 +38,7 @@ function ClienItem(props) {
   return(
     <InputClient
       onClick={handleSelectedClien}
-      to={selectedClient ? "/selecionar-cliente/checkout-client" : "/selecionar-cliente"}
+      to={quant != 0 ? "/selecionar-cliente/checkout-client" : "/selecionar-cliente"}
     >
         <li className="item_list_conteiner item_client">
 

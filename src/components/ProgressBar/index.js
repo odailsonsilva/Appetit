@@ -4,7 +4,6 @@ import {
     Container,
     TotalProgress,
     NowProgress
-
  } from './styles';
 
 function ProgressBar(props) {
