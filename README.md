@@ -75,7 +75,7 @@ O layout da aplicação está disponível no Figma: https://www.figma.com/file/X
 ### Print das telas desenvolvidas
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="login" title="#login" src="./print_pages/login.png" width="400px">
+    <img alt="login" title="#login" src="./src/print_pages/login.png" width="400px">
     <img alt="lista de pedidos" title="#OrdersList" src="./print_pages/login.png" width="400px">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/orders-list.png" width="400px">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
