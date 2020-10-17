@@ -127,10 +127,14 @@ export default function Index() {
           
           <h6>Em qual data foi realizado?</h6>
 
-          <InputCalender
-              value={`${selectDayFormat}/${selectMontFormt}/${selectedYear}`}  
-              onClick={handleInputCalender}
-          />
+          <div className="input_label">
+            <InputCalender
+                value={`${selectDayFormat}/${selectMontFormt}/${selectedYear}`}  
+                onClick={handleInputCalender}
+            />
+
+            <label>Data do pedido</label>
+          </div>
           <Container id="container">
               <HeaderCalender>
                   <h6>{selectedYear}</h6>

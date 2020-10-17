@@ -9,6 +9,7 @@ import ItemLi from '../../components/ItemLi'
 import {Btn} from '../Btn'
 import InputSearch from '../InputSearch'
 import CheckoutBar from '../CheckoutBar'
+import ProgressBar from '../ProgressBar'
 
 function PainelTwo(props) {
   return (
@@ -24,7 +25,7 @@ function PainelTwo(props) {
           <p>{props.p}</p>
 
           <p>Passo {props.passo} de 3</p>
-          <span></span>
+          <ProgressBar passo={props.passo}/>
           <h6>{props.h6}</h6>
           <InputSearch />
         </div>
@@ -71,7 +72,11 @@ function PainelTwo(props) {
            title="Nescau" router no_divisor/>
         </ListItem>
   
-        <Btn to="" className="btn_next">Avancar</Btn>  
+      
+        <div className="btn_margin">
+         <Btn>Avancar</Btn> 
+        </div> 
+
         <CheckoutBar url="/selecionar-cliente" checkoutTitle="Total: R$ 3,25"/>
       </div> 
     ); 

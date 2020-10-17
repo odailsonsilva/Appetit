@@ -1,12 +1,11 @@
 import React from 'react';
 
-import { Container } from './styles';
-
 import Header from '../../components/Header'
 import InputSearch from '../../components/InputSearch'
 import ListItem from '../../components/ListItem'
 import ItemLi from '../../components/ItemLi'
 import CheckoutBar from '../../components/CheckoutBar'
+import ProgressBar from '../../components/ProgressBar'
 
 import ImgClient1 from '../../assets/imgs/profile/client-1.svg'
 import ImgClient2 from '../../assets/imgs/profile/client-2.svg'
@@ -23,9 +22,9 @@ function PainelClient(props) {
       </div>
 
       <div className="container_info_painel">
-        <p>{props.p}</p>
-
+      <p>{props.p}</p>
         <p>Passo {props.passo} de 3</p>
+        <ProgressBar passo={props.passo}/>
         <span></span>
         <h6>{props.h6}</h6>
         <InputSearch />

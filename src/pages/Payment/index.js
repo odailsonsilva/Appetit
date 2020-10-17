@@ -3,9 +3,10 @@ import React from 'react';
 import { Container } from './styles';
 
 import HeaderImg from '../../components/HeaderImg'
-import PainelD from '../../components/PainelD'
+import PainelCheckout from '../../components/PainelCheckout'
 import PainelPayment from '../../components/PainelPayment'
 import SideBar from '../../components/SideBar/SideBar'
+
 
 
 function Payment() {
@@ -16,7 +17,7 @@ function Payment() {
         </div>
 
         <div class="abstract_painel">
-         <PainelD showIconBack/>
+        <PainelCheckout showIconBack/>>
         </div>
         
         <div>

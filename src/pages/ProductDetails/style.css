@@ -1,6 +1,6 @@
 /*GRID*/
 .container_new_order{
-  background: #E5E5E5;
+  background: #FAFAFA;
   display: grid;
   grid-template-columns: 342px 1fr;
 }

@@ -1,5 +1,5 @@
 .container_order_list{
-  background: #E5E5E5;
+  background: #FAFAFA;;
   display: grid;
   grid-template-columns: 342px 1fr;
 }
@@ -8,6 +8,7 @@
   width: 90%;
   margin: 0 auto;
 }
+
 
 
 

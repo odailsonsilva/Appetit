@@ -19,7 +19,7 @@ function NewOrder() {
         <div className="container">
           <div className="container_main">
           <HeaderImg />
-            <Header showIconBack route="/lista-de-pedidos" title="Pedidos de Luiz" none_margin/>
+            <Header icon route="/lista-de-pedidos" title="Pedidos de Luiz" none_margin/>
             
             <HistoryOrder>
               <BoxItem img={Profile} title="titulo" text="paragrafo" value="R$ 3,50"/>

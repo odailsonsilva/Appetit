@@ -15,4 +15,5 @@ export const Btn = styled(Link)`
   line-height: 2.2rem;
   text-align: center;
   text-transform: uppercase;
+  margin: 40px 16px 0  320px;
 `

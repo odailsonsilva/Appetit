@@ -3,7 +3,7 @@ import React from 'react'
 import {Container} from './styles'
 
 import HeaderImg from '../../components/HeaderImg'
-import PainelD from '../../components/PainelD'
+import PainelCheckout from '../../components/PainelCheckout'
 import PainelClient from '../../components/PainelClient'
 import SideBar from '../../components/SideBar/SideBar'
 
@@ -18,7 +18,7 @@ class ClientSelect extends React.Component {
         </div>
 
         <div class="abstract_painel">
-         <PainelD showIconBack/>
+         <PainelCheckout showIconBack/>
         </div>
         
         <div>

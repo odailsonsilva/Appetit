@@ -13,7 +13,7 @@ export const ContainerCalenderMain = styled.div`
     color: rgba(0, 0, 0, 0.88);
 
     margin-bottom: 24px;
-  }
+  }  
 `
 
 export const Container = styled.div`

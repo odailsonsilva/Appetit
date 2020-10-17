@@ -48,10 +48,13 @@
 }
 
 .scrollE .btn_next{
-  display: block;
-  margin: 40px 16px 200px 320px;
+  margin: 40px 16px 70px 320px;
 }
 
 .scrollE .img_none{
   margin-bottom: 28px;
+}
+
+.scrollE .btn_margin{
+  margin-bottom: 50px;
 }

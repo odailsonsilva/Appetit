@@ -29,5 +29,6 @@ export default createGlobalStyle `
   body, input, button{
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
   }
 `

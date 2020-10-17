@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import IconBefore from '../../assets/imgs/radio/radio_button_off.svg'
-import IconActive from '../../assets/imgs/radio/radio_button_on.svg'
+import IconBefore from '../../assets/imgs/radio/radio_button_off.png'
+import IconActive from '../../assets/imgs/radio/radio_button_on.png'
 
 export const Container = styled.div`
   display: block;
@@ -37,7 +37,7 @@ export const Container = styled.div`
       width: 25px;
       height: 25px;
       background-image: url(${IconActive});
-      background-position: 0 -72;
+      background-position: 0 -72px;
       vertical-align: middle;
       display: inline-block;
       margin: 0 8px 0 0;
