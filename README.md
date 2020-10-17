@@ -140,7 +140,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <br />
 
 [![Instagram Badge](https://img.shields.io/badge/-@odailsonsilva__-993399?style=flat-square&labelColor=993399&logo=instagram&logoColor=white&link=https://www.instagram.com/odailsonsilva_/)](https://www.instagram.com/odailsonsilva_/) 
-[![Linkedin Badge](https://img.shields.io/badge/-Odailson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/odailson-silva-2564051a0/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Odailson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/odailson-silva-2564051a0/)](https://www.linkedin.com/in/odailson-silva-2564051a0/) 
 [![Gmail Badge](https://img.shields.io/badge/-odafreelancerti@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:odafreelancerti@gmail.com)
 
 ---
