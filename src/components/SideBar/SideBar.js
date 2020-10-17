@@ -14,28 +14,29 @@ import "./style.css";
 
 class SideBar extends React.Component {
   state = {
-    show: "none",
-    activeAttr: false,
+    show: "show",
+    activeAttr: true,
     activeAttr2: false,
     activeLink: false,
     activeLink2: false,
-    iconOrder: IconOrdersB,
+    iconOrder: IconOrders,
     iconClient: IconClientsB,
+    inicializeBG: "#fff"
   };
 
   menuShow = (e) => {
-    if (this.state.show == "none") {
+    if (this.state.show == "show") {
       this.setState({
-        show: "show",
-        activeAttr: true,
-        iconOrder: IconOrders,
+        show: "none",
+        activeAttr: false,
+        iconOrder: IconOrdersB
         // iconClient: IconClients,
       });
     } else {
       this.setState({
-        show: "none",
-        activeAttr: false,
-        iconOrder: IconOrdersB,
+        show: "show",
+        activeAttr: true,
+        iconOrder: IconOrders,
         iconClient: IconClientsB,
       });
     }
@@ -61,14 +62,14 @@ class SideBar extends React.Component {
 
   render() {
     return (
-      <nav id="sidebar">
+      <aside id="sidebar">
         <img src={LogoFE} alt="" className="logo" />
 
         <ul className="menu">
           <li className="animationSideBar">
             <Link
               className={
-                this.state.activeAttr ? "link-sidebar active" : "link-sidebar"
+                this.state.activeAttr ? "link-sidebar" : "link-sidebar active"
               }
               onClick={this.menuShow}
             >
@@ -76,6 +77,7 @@ class SideBar extends React.Component {
                 icon={this.state.iconC}
                 activeAttr={this.state.activeAttr}
                 icon={this.state.iconOrder}
+                style={{backgroudColor: "#fff"}}
               >
                 PEDIDOS
               </Icon>
@@ -85,8 +87,7 @@ class SideBar extends React.Component {
               <li>
                 <Link
                   to="/lista-de-pedidos"
-                  className={this.state.activeLink ? "active a" : ""}
-                  onClick={this.funActiveLink}
+                  className={this.state.activeLink ? "" : "active a"}
                 >
                   EM ABERTOS
                 </Link>
@@ -94,8 +95,7 @@ class SideBar extends React.Component {
               <li>
                 <Link
                   to="/lista-de-pedidos"
-                  className={this.state.activeLink2 ? "active b" : ""}
-                  onClick={this.funActiveLink2}
+                  className={this.state.activeLink2 ? "active b" : ""}                
                 >
                   ENCERRADOS
                 </Link>
@@ -106,7 +106,7 @@ class SideBar extends React.Component {
           <li>
             <Link
               className={
-                this.state.activeAttr2 ? "link-sidebar active" : "link-sidebar"
+                this.state.activeAttr2 ? "link-sidebar-2 active" : "link-sidebar-2"
               }
             // onClick={this.menuShow}
             >
@@ -121,7 +121,7 @@ class SideBar extends React.Component {
         </ul>
 
         <p>Infoway Gestão em Saúde ©, 2020.</p>
-      </nav>
+      </aside>
     );
   }
 }
