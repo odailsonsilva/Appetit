@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import {Link } from 'react-router-dom'
 // import {MdCheckBoxOutlineBlank} from 'react-icons/md'
 // import CheckCircleOutline from 'material-ui/svg-icons/action/check-circle-  ';
 

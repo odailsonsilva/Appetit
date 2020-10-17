@@ -18,7 +18,7 @@ class ClientSelect extends React.Component {
         </div>
 
         <div class="abstract_painel">
-         <PainelCheckout showIconBack/>
+         <PainelCheckout showIconBack route="/novo-pedido/checkout-product"/>
         </div>
         
         <div>

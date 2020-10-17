@@ -13,7 +13,6 @@ import ProgressBar from '../ProgressBar'
 
 function PainelTwo(props) {
 
-  const [selectedProduct, setSelectedProduct] = useState(false)
 
   return (
       <div className="scrollE">

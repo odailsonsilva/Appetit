@@ -41,15 +41,15 @@ function PainelClient(props) {
 
 
       <ListItem >
-          <ClientItem url={ImgClient1} title="Justine Marshall" clientClick={handleQuantClients} path="/selecionar-cliente/checkout-client"/>
-          <ClientItem url={ImgClient2} title="Bairam Frootan"  clientClick={handleQuantClients}/>
-          <ClientItem url={ImgClient3} title="Tua Manuera" clientClick={handleQuantClients} />
-          <ClientItem url={ImgClient1} title="Justine Marshall" clientClick={handleQuantClients} />
-          <ClientItem url={ImgClient2} title="Bairam Frootan" clientClick={handleQuantClients} />
-          <ClientItem url={ImgClient3} title="Tua Manuera" clientClick={handleQuantClients}  no_divisor/>
+          <ClientItem url={ImgClient1} title="Justine Marshall" clientClick={handleQuantClients} id={1} />
+          <ClientItem url={ImgClient2} title="Bairam Frootan"  clientClick={handleQuantClients} id={2}/>
+          <ClientItem url={ImgClient3} title="Tua Manuera" clientClick={handleQuantClients} id={3}/>
+          <ClientItem url={ImgClient1} title="Justine Marshall" clientClick={handleQuantClients} id={4}/>
+          <ClientItem url={ImgClient2} title="Bairam Frootan" clientClick={handleQuantClients} id={5}/>
+          <ClientItem url={ImgClient3} title="Tua Manuera" clientClick={handleQuantClients} id={6}  no_divisor/>
       </ListItem>
 
-      <CheckoutBar checkoutTitle="3 clientes selecionados" url="/status-de-pagamento" true={1}/>
+      <CheckoutBar checkoutTitle="3 clientes selecionados" url="/status-de-pagamento" true={0}/>
     </div>
   );
 }

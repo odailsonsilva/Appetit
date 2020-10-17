@@ -4,8 +4,6 @@ import {Container} from './style'
 
 export default function Index(props) {
 
-  const [valueRadio, setValueRadio] = useState('olx')
-
   return (
     <>
     <Container> 

@@ -17,7 +17,7 @@ function Payment() {
         </div>
 
         <div class="abstract_painel">
-        <PainelCheckout showIconBack/>>
+        <PainelCheckout showIconBack route="/selecionar-cliente/checkout-client"/>
         </div>
         
         <div>
