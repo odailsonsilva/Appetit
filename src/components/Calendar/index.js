@@ -44,7 +44,7 @@ const days = [
 
 const daySo = []
 
-export default function Index() {
+export default function Index(props) {
     
     const [selectedYear, setSelectedYear] = useState(0)
     const [selectedMonth, setSelectedMonth] = useState(0)
@@ -102,9 +102,9 @@ export default function Index() {
 
   const handleFinishClick = () => {
       if(selectedYear > 0 && selectedDay > 0 && selectedDay > 0){
-            
         const container = document.getElementById("container")
         container.style.display = "none" 
+        props.handleDate(1)
       }
   }
 
@@ -131,6 +131,7 @@ export default function Index() {
             <InputCalender
                 value={`${selectDayFormat}/${selectMontFormt}/${selectedYear}`}  
                 onClick={handleInputCalender}
+                
             />
 
             <label>Data do pedido</label>
@@ -161,6 +162,7 @@ export default function Index() {
                           <DateItem
                               key={key}
                               onClick={() => setSelectedDay(item.number) }
+                              
                               style={{
                                   backgroundColor: item.number === selectedDay ?
                                   '#ff8822' : "#fff"

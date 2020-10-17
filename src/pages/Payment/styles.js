@@ -3,7 +3,6 @@ import {Grid} from '../../components/Grid/Grid'
 
 export const Container = styled(Grid)`
   background-color: #FAFAFA;
-
   label{
     font-size: 1.6rem;
     line-height: 2.4rem;

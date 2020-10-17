@@ -26,6 +26,7 @@ export const ContainerBar = styled.div`
 
     svg{
       cursor: pointer;
+      flex: 1;
     }
   }
 

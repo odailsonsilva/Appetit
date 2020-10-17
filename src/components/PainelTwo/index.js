@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.css';
 
 import ImgTest from '../../assets/imgs/profile/profile.svg'
@@ -12,6 +12,9 @@ import CheckoutBar from '../CheckoutBar'
 import ProgressBar from '../ProgressBar'
 
 function PainelTwo(props) {
+
+  const [selectedProduct, setSelectedProduct] = useState(false)
+
   return (
       <div className="scrollE">
         <div className="header_container_painel_two">
@@ -77,7 +80,7 @@ function PainelTwo(props) {
          <Btn>Avancar</Btn> 
         </div> 
 
-        <CheckoutBar url="/selecionar-cliente" checkoutTitle="Total: R$ 3,25"/>
+        <CheckoutBar true={1} url="/selecionar-cliente" checkoutTitle="Total: R$ 3,25"/>
       </div> 
     ); 
 }

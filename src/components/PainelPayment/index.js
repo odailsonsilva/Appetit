@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import { Container, HangleProgressBar } from './styles';
+import { 
+  Container, 
+  HangleProgressBar,
+  BtnFinish
+} from './styles';
 
 import Header from '../../components/Header'
 import BoxRadio from '../../components/BoxRadio'
@@ -8,6 +12,18 @@ import Calender from '../../components/Calendar'
 import ProgressBar from '../../components/ProgressBar'
 
 function PainelPayment(props) {
+
+  const [valueInput, setValueInput] = useState(null)
+  const [selectedDate, setSelectedDate] = useState(null)
+
+  function handleClickRadio(value){
+    setValueInput(value)
+  }
+
+  function handleSelectedDate(date){
+    setSelectedDate(date)
+  }
+
   return (
     <Container className="scrollE">
 
@@ -32,15 +48,24 @@ function PainelPayment(props) {
           <BoxRadio 
             radio_name_one="Não está pago" 
             radio_name_two="Já está pago"
+            handleChange={handleClickRadio}
           />
         </div>          
       </div>
 
       <div className="container_info_painel">
-       <Calender />
+       <Calender 
+        handleDate={handleSelectedDate}
+       />
       </div>
       
-
+      <BtnFinish>
+        <button disabled={!valueInput || !selectedDate}>
+          {
+            !valueInput || !selectedDate ? 'FINALIZAR' : 'SALVAR'
+          }
+        </button>
+      </BtnFinish>
         
     </Container>
   );

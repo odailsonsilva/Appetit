@@ -7,7 +7,9 @@ import HeaderImg from '../../components/HeaderImg'
 import Painel from '../../components/PainelD'
 import PainelTwo from '../../components/PainelTwo'
 
-function NewOrder() {
+
+function NewOrder(props) {
+  
   return (
       <div className="container_new_order">
         <div className="side">

@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom'
 
 export const ContainerBar = styled(Link)`
   width: 100%;
-  height: 68px;
+  height: 58px;
   box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
   background: #FF8822;
 
   position: sticky;
   bottom: 0;
+  z-index: ${props=>props.true == 1 ? -999 : 0};
 
   display: flex;
   justify-content: space-between;
