@@ -66,7 +66,7 @@ a intenção de tornar a dinâmica das paginas mais intuitivas.
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no Figma:
+O layout da aplicação está disponível no Figma: https://www.figma.com/file/XTbAE7DPmkrAI0b5hmzB64Vd/Appetit_web?node-id=1%3A3
 
 <a href="https://www.figma.com/file/XTbAE7DPmkrAI0b5hmzB64Vd/Appetit-Web?node-id=1%3A3">
   <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
@@ -122,9 +122,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Ecoleta)](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)**
+-   Protótipo:  **[Figma](https://www.figma.com/file/XTbAE7DPmkrAI0b5hmzB64Vd/Appetit_web?node-id=1%3A3)** 
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
 -   Ícones:  **[Feather Icons](https://feathericons.com/)**,  **[Font Awesome](https://fontawesome.com/)**
 -   Fontes:  **[Ubuntu](https://fonts.google.com/specimen/Ubuntu)**,  **[Roboto](https://fonts.google.com/specimen/Roboto)**
 
