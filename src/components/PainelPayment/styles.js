@@ -15,6 +15,8 @@ export const BtnFinish = styled.form`
     align-items: center;
     width: 90%;
     margin-top: 40px;
+
+   
     
     button{
         width: 208px;
@@ -30,8 +32,10 @@ export const BtnFinish = styled.form`
         justify-content: center;
         align-items: center;
 
+        cursor: pointer;
        &:disabled{
-        opacity: 0.5
+        opacity: 0.5;
+        cursor: no-drop;
        }
     }
 

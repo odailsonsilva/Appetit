@@ -24,7 +24,7 @@ function PainelCheckout(props) {
           <Header 
             title="Novo pedido" 
             showIconBack 
-            route="/lista-de-pedidos" 
+            route={props.route}
             icon={props.showIconBack}
           />
           </div>
