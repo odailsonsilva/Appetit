@@ -53,7 +53,7 @@ a intenção de tornar a dinâmica das paginas mais intuitivas.
 
 ## ⚙️ Páginas a serem construídas
 
-- [ ] Páginas de login;
+- [x] Páginas de login;
 - [x] Página com lista de pedidos efetuados;
 - [x] Página de detalhes de pedidos;
 - [x] Página de novos pedidos;
@@ -116,10 +116,11 @@ $ npm start
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [Java](https://www.typescriptlang.org/))
+#### **Website**  ([React](https://reactjs.org/)  +  [Javascript](https://www.typescriptlang.org/))
 
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 -   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Styled Components](https://github.com/styled-components/styled-components)**
 
 
 > Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json)
@@ -130,8 +131,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   Protótipo:  **[Figma](https://www.figma.com/file/XTbAE7DPmkrAI0b5hmzB64Vd/Appetit_web?node-id=1%3A3)** 
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
--   Ícones:  **[Feather Icons](https://feathericons.com/)**,  **[Font Awesome](https://fontawesome.com/)**
--   Fontes:  **[Ubuntu](https://fonts.google.com/specimen/Ubuntu)**,  **[Roboto](https://fonts.google.com/specimen/Roboto)**
+-   Ícones:  **[Material Icons](https://material.io/resources/icons/?style=baseline)**, **[Pasta Assets>imgs]**
+-   Fontes:  **[Open Sans](https://fonts.google.com/specimen/Open+Sans)**
 
 
 
