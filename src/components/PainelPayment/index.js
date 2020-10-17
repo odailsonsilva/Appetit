@@ -28,7 +28,7 @@ function PainelPayment(props) {
       </div>
 
       <div className="container_info_painel">
-      <Calender />
+       <Calender />
       </div>
       
 
