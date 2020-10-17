@@ -7,10 +7,8 @@ import {useHistory} from 'react-router-dom'
 export default function Index(props) {
   const history = useHistory().location.pathname
 
-  const [path, setPath] = useState(history)
-
   return (
-    <ContainerBar to={props.url} true={history != "/novo-pedido/checkout-product" ? 1 : 0}>
+    <ContainerBar to={props.url} true={history != "/novo-pedido/checkout-product" && history != "/selecionar-cliente/checkout-client" ? 1 : 0}>
       
       <h6>{props.checkoutTitle}</h6>
         

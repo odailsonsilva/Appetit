@@ -25,7 +25,7 @@ function PainelPayment(props) {
   }
 
   return (
-    <Container className="scrollE">
+    <Container className="scrollE"  >
 
       <div className="header_container_painel_two">
         <Header 
@@ -59,7 +59,7 @@ function PainelPayment(props) {
        />
       </div>
       
-      <BtnFinish>
+      <BtnFinish action="/feedback-do-pedido">
         <button disabled={!valueInput || !selectedDate}>
           {
             !valueInput || !selectedDate ? 'FINALIZAR' : 'SALVAR'

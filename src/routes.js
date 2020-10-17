@@ -8,6 +8,7 @@ import UserOrder from './pages/UserOrder'
 import ProductDetails from './pages/ProductDetails'
 import ClientSelect from './pages/ClientSelect'
 import Payment from './pages/Payment'
+import FeedbackOrder from './pages/FeedbackOrder'
 
 export default function Routes(){
 
@@ -23,6 +24,7 @@ export default function Routes(){
         <Route path="/selecionar-cliente" component={ClientSelect}/>
         <Route path="/selecionar-cliente/checkout-client" component={ClientSelect}/>
         <Route path="/status-de-pagamento" component={Payment}/>
+        <Route path="/feedback-do-pedido" component={FeedbackOrder}/>
       </Switch>
     </BrowserRouter>
   )

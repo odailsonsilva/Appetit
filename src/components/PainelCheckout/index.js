@@ -13,8 +13,10 @@ import Client3 from '../../assets/imgs/profile/client-3.svg'
 
 import Header from '../Header'
 
+import {useHistory} from 'react-router-dom'
+
 function PainelCheckout(props) {
-  const [divisor, setDivisor] = useState(true)
+  const history = useHistory().location.pathname
 
   return (
       <Container className="abstract_painel">
@@ -41,32 +43,38 @@ function PainelCheckout(props) {
 
             <div className="divisor"></div>
 
-          <CheckoutList>
-              <h4>Clientes</h4>
-              <CheckoutItem divisorTrue>
-                  <div>
-                    <img src={Client1} />
-                    <p>Justine Marshall</p>
-                  </div>
-              </CheckoutItem>
+          {
+            history == '/selecionar-cliente' ? 
+              ""
+            :
+            <>
+                  <CheckoutList>
+                    <h4>Clientes</h4>
+                    <CheckoutItem divisorTrue>
+                        <div>
+                          <img src={Client1} />
+                          <p>Justine Marshall</p>
+                        </div>
+                    </CheckoutItem>
 
-              <CheckoutItem divisorTrue>
-                  <div>
-                    <img src={Client2} />
-                    <p>Bairam Frootan</p>
-                  </div>
-              </CheckoutItem>
+                    <CheckoutItem divisorTrue>
+                        <div>
+                          <img src={Client2} />
+                          <p>Bairam Frootan</p>
+                        </div>
+                    </CheckoutItem>
 
-              <CheckoutItem divisorTrue>
-                  <div>
-                    <img src={Client3} />
-                    <p>Tua Manuera</p>
-                  </div>
-              </CheckoutItem>
-          </CheckoutList>
+                    <CheckoutItem divisorTrue>
+                        <div>
+                          <img src={Client3} />
+                          <p>Tua Manuera</p>
+                        </div>
+                    </CheckoutItem>
+                </CheckoutList>
 
-          <div className="divisor"></div>
-          
+            <div className="divisor"></div>
+            </>
+          }
           <TotalContainer>
               <p>Total</p>
               <p className="value">R$ 6,50</p>

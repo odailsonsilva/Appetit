@@ -1,16 +1,17 @@
-import React,{cloneElement} from 'react'
+import React,{cloneElement, useState} from 'react'
 
 import './style.css'
 
-export default function index(props) {
+export default function Index(props) {
+
   return (
     <>
     <div className="container_list_item">  
       <h3>{props.title_Ul}</h3>
-      <ul className="list_item_container">
+      <ul className="list_item_container" >
         {
           React.Children.map(props.children, child => {
-            return cloneElement(child, props)
+            return cloneElement(child, props) 
           })
         }
       </ul>

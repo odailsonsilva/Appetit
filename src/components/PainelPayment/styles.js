@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.div`
     width: 100%;
 `;
@@ -8,7 +9,7 @@ export const HangleProgressBar = styled.div`
     width: 90%;
 `
 
-export const BtnFinish = styled.div`
+export const BtnFinish = styled.form`
     display: flex;
     justify-content: flex-end;
     align-items: center;

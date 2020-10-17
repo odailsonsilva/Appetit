@@ -15,6 +15,7 @@ export const CheckoutList = styled.ul`
     
     
     h4{
+        margin-top: 16px;
         font-size: 2.0rem;
         line-height: 3.0rem;
         color: rgba(0, 0, 0, 0.88);
