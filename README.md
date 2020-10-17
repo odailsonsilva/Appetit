@@ -53,7 +53,7 @@ a intenção de tornar a dinâmica das paginas mais intuitivas.
 
 ## ⚙️ Páginas a serem construídas
 
-- [x] Páginas de login;
+- [ ] Páginas de login;
 - [x] Página com lista de pedidos efetuados;
 - [x] Página de detalhes de pedidos;
 - [x] Página de novos pedidos;
