@@ -7,6 +7,12 @@ export const Container = styled.div`
   grid-template-columns: 342px 1fr;
   background: #fafafa;
   height: 100vh;
+
+  @media (max-width: 920px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Grid1 = styled.div`
@@ -53,6 +59,21 @@ export const ContainerBtns = styled.div`
   & .btn-order{
     margin-right: 16px; 
   }
+
+  @media (max-width: 920px){
+    margin-bottom: 0;
+
+   
+  }
+
+
+  @media (max-width: 670px){
+    flex-direction: column;
+
+    & .btn-order{
+    margin-right: 0; 
+     }
+  }
 `;
 
 
@@ -76,6 +97,16 @@ export const BtnNew = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 670px){
+    width: 80%;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 470px){
+    width: 90%;
+    margin-top: 16px;
+  }
 `;
     
 export const BtnOrder = styled(Link)`
@@ -96,4 +127,14 @@ export const BtnOrder = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 670px){
+    width: 80%;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 470px){
+    width: 90%;
+    margin-top: 16px;
+  }
 `;

@@ -4,6 +4,10 @@ export const Container = styled.div`
   position: sticky;
   top: 76px;
 
+  @media(max-width: 1290px){
+    display: none;
+  }
+
   div.divisor{
     border-bottom: 8px solid rgba(0, 0, 0, 0.08);
   }

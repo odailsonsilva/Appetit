@@ -102,3 +102,9 @@
   opacity: 0.5;
 }
 
+
+@media (max-width: 920px){
+  aside#sidebar{
+    display: none;
+  }
+}

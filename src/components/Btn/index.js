@@ -16,4 +16,8 @@ export const Btn = styled(Link)`
   text-align: center;
   text-transform: uppercase;
   margin: 40px 16px 0  320px;
+
+  @media(max-width: 1290px){
+    display: none
+  }
 `

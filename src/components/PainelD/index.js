@@ -8,7 +8,7 @@ function PainelD(props) {
   return (
       <div className="sticky">
         <div className="header_container_painel">
-          <Header title="Novo pedido" showIconBack route="/novo-pedido" classFixed="header_fixed" icon={props.showIconBack}/>
+          <Header title="Novo pedido" showIconBack route="/lista-de-pedidos" classFixed="header_fixed" icon={props.showIconBack}/>
         </div>
 
         <div className="painel_container">
