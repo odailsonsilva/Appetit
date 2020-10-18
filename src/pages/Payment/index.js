@@ -11,11 +11,12 @@ import SideBar from '../../components/SideBar/SideBar'
 
 function Payment() {
   return (
-    <Container>
+    <Container >
+
         <div>
         <SideBar />
         </div>
-
+        
         <div class="abstract_painel">
         <PainelCheckout showIconBack route="/selecionar-cliente/checkout-client"/>
         </div>

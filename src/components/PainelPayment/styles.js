@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
+
+    .container_info_painel{
+        width: 90%;
+    }
 `;
 
 export const HangleProgressBar = styled.div`

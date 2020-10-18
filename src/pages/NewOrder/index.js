@@ -2,6 +2,8 @@ import React from 'react';
 
 import  './style.css';
 
+import { useHistory } from 'react-router-dom';
+
 import SideBar from '../../components/SideBar/SideBar'
 import HeaderImg from '../../components/HeaderImg'
 import Painel from '../../components/PainelD'
@@ -9,7 +11,8 @@ import PainelTwo from '../../components/PainelTwo'
 
 
 function NewOrder(props) {
-  
+
+
   return (
       <div className="container_new_order">
         <div className="side">
@@ -26,13 +29,14 @@ function NewOrder(props) {
             
             <div className="products">
               <HeaderImg /> 
-              <PainelTwo 
+              <PainelTwo  
                 title="Informações para o pedido" 
                 p="Preencha as informações abaixo para concluir esta venda."
                 passo={1}
                 h6="O que você está vendendo?"
                 showIconBack
                 route="/lista-de-pedidos"
+                
               />
             </div>
 

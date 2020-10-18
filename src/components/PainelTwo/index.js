@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './style.css';
 
 import ImgTest from '../../assets/imgs/profile/profile.svg'
+import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
 
 import Header from '../../components/Header'
 import ListItem from '../../components/ListItem'
@@ -11,9 +12,16 @@ import InputSearch from '../InputSearch'
 import CheckoutBar from '../CheckoutBar'
 import ProgressBar from '../ProgressBar'
 
+import { useHistory } from 'react-router-dom';
+
 function PainelTwo(props) {
 
+  
+  const history = useHistory().location.pathname
+  const r = history == "/novo-pedido/checkout-product" ? 1 : 0
+  let imgSelect = r != 1 ? "https://s2.glbimg.com/0BsLY23sXDUg6wyeawk3Ur39CW0=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/H/m/TB0qseRj2xqTSntdQRPQ/cuscuz.jpg" : CheckboxImg
 
+  console.log( r)
   return (
       <div className="scrollE">
         <div className="header_container_painel_two">
@@ -35,8 +43,11 @@ function PainelTwo(props) {
         <ListItem title_Ul="Cuscuz" divisor>
           <ItemLi title="Cuscuz simples" url="https://s2.glbimg.com/0BsLY23sXDUg6wyeawk3Ur39CW0=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/H/m/TB0qseRj2xqTSntdQRPQ/cuscuz.jpg" 
           router/>
-          <ItemLi img={ImgTest} title="Cuscuz completo" url="https://abrilmdemulher.files.wordpress.com/2019/01/cuscuz-paulista-moderno.jpg?quality=90&strip=info&w=680&h=453&crop=1"
-           router no_divisor/>
+          <ItemLi 
+          title="Cuscuz completo" 
+          url={imgSelect}
+           router no_divisor
+           />
         </ListItem>
             
         <ListItem title_Ul="Pães" divisor>

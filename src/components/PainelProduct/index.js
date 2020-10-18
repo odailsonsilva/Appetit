@@ -3,8 +3,6 @@ import './style.css';
 
 import Header from '../../components/Header'
 import BoxInput from '../../components/BoxRadio'
-import {Btn} from '../Btn'
-import ProfileImg from '../../assets/imgs/profile/profile.svg'
 import CartBarOne from '../CartBarOne'
 
 function PainelTwo(props) {
