@@ -84,7 +84,7 @@ O layout da aplicação está disponível no Figma: https://www.figma.com/file/X
 
   ### Lista de pedidos
   
-  <img alt="lista de pedidos" title="#orders-list" src="./src/print_pages/orders-list.png" width="1200px">
+  <img alt="lista de pedidos" title="#orders-list" src="./src/print_pages/orders-list.PNG" width="1200px">
 
   #
 
