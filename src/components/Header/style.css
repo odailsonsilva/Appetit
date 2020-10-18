@@ -17,7 +17,7 @@
 }
 
 .header_container a{
-  display: none;
+  display: block;
 }
 
 .header_container h3{
@@ -34,7 +34,7 @@
 
 @media (max-width: 1290px){
   .header_container{
-    margin-top: 40px;
+    display: inline;
   }
 
   .header_container a{

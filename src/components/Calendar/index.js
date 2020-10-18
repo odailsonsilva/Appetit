@@ -66,7 +66,7 @@ export default function Index(props) {
     }, [])
 
     useEffect(() => {
-        let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate() //captura o ultimo dia do mes 
+        let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate() 
         let newListDay = []
         
 
@@ -80,9 +80,8 @@ export default function Index(props) {
             month = month < 10 ? `0${month}` : month
             day = day < 10 ? `0${day}` : day
 
-            let selDate = `${year}-${month}-${day}`//monta uma data
 
-            newListDay.push({ //weekday e o dia (seg, ter...)
+            newListDay.push({ 
                 number: i
             })
             
@@ -90,10 +89,10 @@ export default function Index(props) {
 
         setListDays(newListDay)
 
-    }, [selectedMonth, selectedYear])//sempre que eles modificarem pega os dias do mes
+    }, [selectedMonth, selectedYear])
 
   const handleLeftDateClick = () => {
-    let mountDate = new Date(selectedYear, selectedMonth, selectedDay)// montou uma data
+    let mountDate = new Date(selectedYear, selectedMonth, selectedDay)
         mountDate.setMonth( mountDate.getMonth() - 1 )
         setSelectedYear(mountDate.getFullYear())
         setSelectedMonth(mountDate.getMonth())
@@ -109,7 +108,7 @@ export default function Index(props) {
   }
 
   const handleRightDateClick = () => {
-    let mountDate = new Date(selectedYear, selectedMonth, selectedDay) // montou uma data
+    let mountDate = new Date(selectedYear, selectedMonth, selectedDay) 
     mountDate.setMonth( mountDate.getMonth() + 1 )
     setSelectedYear(mountDate.getFullYear())
     setSelectedMonth(mountDate.getMonth())

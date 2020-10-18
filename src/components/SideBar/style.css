@@ -110,7 +110,7 @@
 }
 
 
-@media (max-width: 920px){
+@media (max-width: 1290px){
   aside#sidebar{
     display: none;
   }

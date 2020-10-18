@@ -11,10 +11,9 @@
   margin: 0 auto;
 }
 
-@media (max-width: 920px){
+@media (max-width: 1290px){
   .container_user_order{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
 }

@@ -24,7 +24,7 @@ class OrderList extends React.Component {
         <div></div>
         <div className="container_order">
         
-            <HeaderImg /> 
+          <HeaderImg disbl={true} /> 
           <div className="container_main">
          
             <Header title="Olá, Pedro!" none_margin/>

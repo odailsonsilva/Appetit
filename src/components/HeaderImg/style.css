@@ -18,8 +18,14 @@
   border-radius: 50%;
 }
 
-@media(max-width: 920px){
+@media(max-width: 1290px){
   div.header_profile{
-    display: none;
+    display: block;
+    position: relative;
   }
+}
+
+.disbl {
+  display: block;
+  position: relative;
 }
