@@ -27,7 +27,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-Páginas a serem construídas)
+   * [Funcionalidades](#-Páginas-a-serem-construídas)
    * [Layout](#-layout)
      * [Web](#web)
    * [Como executar o projeto](#-como-executar-o-projeto)
