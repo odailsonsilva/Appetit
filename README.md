@@ -27,7 +27,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-Páginas a serem construídas)
+   * [Funcionalidades](#-Páginas-a-serem-construídas)
    * [Layout](#-layout)
      * [Web](#web)
    * [Como executar o projeto](#-como-executar-o-projeto)
@@ -75,14 +75,53 @@ O layout da aplicação está disponível no Figma: https://www.figma.com/file/X
 ### Print das telas desenvolvidas
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="login" title="#login" src="./src/print_pages/login.png" width="400px">
-    <img alt="lista de pedidos" title="#OrdersList" src="./print_pages/login.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/orders-list.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./print_pages/login.png" width="400px">
+
+  ### Login
+
+  <img alt="login" title="#login" src="./src/print_pages/login.PNG" width="1200px">
+  
+  #
+
+  ### Lista de pedidos
+  
+  <img alt="lista de pedidos" title="#OrdersList" src="./src/print_pages/orders-list.png" width="1200pc">
+
+  #
+
+  ### Detalhes de pedidos
+  
+  <img alt="Detalhes de pedidos" title="#order-details" src="./src/print_pages/order-details.PNG" width="1200px">
+
+  #
+  
+  ### Novo pedido
+  
+  <img alt="Novo pedido" title="#new-order" src="./src/print_pages/new-order.PNG" width="1200px">
+
+  #
+  
+  ### Selecionar Cliente
+  
+  <img alt="Selecionar Cliente" title="#select-clients" src="./src/print_pages/select-clients.PNG" width="1200px">
+
+  #
+  
+  ### Status de pagamento
+
+  <img alt="Status de pagamento" title="#status-payment" src="./src/print_pages/status-payment.PNG" width="1200px">
+  
+  #
+  
+  ### Informações do Pedido
+  
+  <img alt="Informações do pedido" title="#user-order" src="./src/print_pages/user-order.PNG" width="1200px">
+
+  #
+  
+  ### Feedback do pedido
+
+  <img alt="Feedback do Pedido" title="#feedback-order" src="./src/print_pages/feedback-order.PNG" width="1200px">
+
 </p>
 
 ---
