@@ -44,8 +44,8 @@ Tabela de conteúdos
 Appetit - plataforma de solicitação de pedidos em um café fictício.
 Desenvolvivo com a framework ReactJs. No projeto não foi implementado BackEnd, somente o Front. Todas as informações foram colocadas de forma estática.
 Pode-se encontrar alguns Bugs no layout, pois o projeto não foi 100% finalizado na sua parte de Fix (tag/etiqueta utilizada para tirar Bugs). Existem partes
-que irão passar por refatoração, depois do dia 17/10/2020, com a intenção de tornar o código mais fácil na manutenção. Além de adionar a arquitetura flux, com o redux, com 
-a intenção de tornar a dinâmica das paginas mais intuitivas.
+que irão passar por refatoração, depois do dia 17/10/2020, com a intenção de tornar o código mais fácil em sua manutenção. Além de adionar a arquitetura flux, com o redux, com 
+a intenção de tornar a dinâmica das paginas mais intuitivas. O fluxo das paginas estão no Figma.
 
 
 
