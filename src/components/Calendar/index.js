@@ -134,7 +134,7 @@ export default function Index(props) {
                 
             />
 
-            <label>Data do pedido</label>
+           
           </div>
           <Container id="container">
               <HeaderCalender>

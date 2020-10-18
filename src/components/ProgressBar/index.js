@@ -16,7 +16,7 @@ function ProgressBar(props) {
   useEffect(()=>{
     switch(props.passo){
         case 1:  setBar(34); break;
-        case 2:  setBar(66); break;
+        case 2:  setBar(62); break;
         case 3:  setBar(100); break;
         default: break;
     }

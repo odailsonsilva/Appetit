@@ -21,7 +21,7 @@ function NewOrder(props) {
           <div className="container_main">
 
             <div class="abstract_painel">
-              <Painel className="painel" showIconBack/>
+              <Painel className="painel" showIconBack />
             </div>
             
             <div className="products">
@@ -31,6 +31,8 @@ function NewOrder(props) {
                 p="Preencha as informações abaixo para concluir esta venda."
                 passo={1}
                 h6="O que você está vendendo?"
+                showIconBack
+                route="/lista-de-pedidos"
               />
             </div>
 

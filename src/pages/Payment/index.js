@@ -27,6 +27,8 @@ function Payment() {
             p="Preencha as informações abaixo para concluir esta venda."
             passo={3}
             h6="Para quem você está vendendo?"
+            showIconBack
+            route="/selecionar-cliente/checkout-client"
           />
         </div>
         

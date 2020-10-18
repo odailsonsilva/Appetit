@@ -16,6 +16,10 @@
   top: 0;
 }
 
+.header_container a{
+  display: none;
+}
+
 .header_container h3{
   font-size: 2.4rem;
   line-height: 3.6rem;
@@ -26,4 +30,14 @@
 .line_bottom{
   border-bottom: 2px solid #ff8822;
   width: 228px;
+}
+
+@media (max-width: 1290px){
+  .header_container{
+    margin-top: 40px;
+  }
+
+  .header_container a{
+    display: block;
+  }
 }

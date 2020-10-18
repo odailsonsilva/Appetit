@@ -28,6 +28,8 @@ class ClientSelect extends React.Component {
             p="Preencha as informações abaixo para concluir esta venda."
             passo={2}
             h6="Para quem você está vendendo?"
+            showIconBack
+            route="/novo-pedido/checkout-product"
           />
         </div>
       </Container>
