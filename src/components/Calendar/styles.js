@@ -190,7 +190,7 @@ export const InputCalender = styled.input`
    color: rgba(0, 0, 0, 0.9);
    padding: 16px;
 
-   @media(max-width: 1290px){
+   @media(max-width: 1024px){
        width: 100%;
    }
   

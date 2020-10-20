@@ -34,7 +34,7 @@
   width: 228px;
 }
 
-@media (max-width: 1290px){
+@media (max-width: 1024px){
   .header_container{
     display: block;
   }

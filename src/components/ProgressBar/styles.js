@@ -14,6 +14,7 @@ export const TotalProgress = styled.div`
 `
 
 export const NowProgress = styled.div`
+    transition: width 0.2s ease;
     width: ${props => props.barWidth}%;
     height: 12px;
     border-radius: 5px 15px 15px 5px;

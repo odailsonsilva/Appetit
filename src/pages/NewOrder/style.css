@@ -23,7 +23,7 @@
   height: 93.8vh;
 }
 
-@media(max-width: 1290px){
+@media(max-width: 1024px){
   div.container_new_order{
     display: flex;
     flex-direction: column;

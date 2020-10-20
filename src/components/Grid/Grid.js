@@ -7,7 +7,7 @@ export const Grid = styled.div`
   min-height: 100vh; /*acho q precisa trocar*/ 
   width: 100%;
 
-  @media(max-width: 1290px){
+  @media(max-width: 1024px){
     display: flex;
     flex-direction: column;
   }

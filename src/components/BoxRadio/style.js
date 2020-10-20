@@ -48,7 +48,7 @@ export const Container = styled.div`
     cursor: pointer;
   }
 
-  @media(max-width: 768px){
+  @media(max-width: 1024px){
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.25);
   }

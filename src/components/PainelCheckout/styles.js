@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: sticky;
   top: 76px;
 
-  @media(max-width: 1290px){
+  @media(max-width: 1024px){
     display: none;
   }
 

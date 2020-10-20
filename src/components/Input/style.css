@@ -60,7 +60,7 @@
   color: rgba(0, 0, 0, 0.56);
 }
 
-@media(max-width: 1290px){
+@media(max-width: 1024px){
   .form-div{
     max-width: 90%;
   }

@@ -8,7 +8,7 @@ export default function Index(props) {
   const history = useHistory().location.pathname
 
   return (
-    <ContainerBar to={props.url} true={history != "/novo-pedido/checkout-product" && props.active != 1 ? 1 : 0}>
+    <ContainerBar to={props.url} true={history !== "/novo-pedido/checkout-product" && props.active !== 1 ? 1 : 0}>
       
       <h6>{props.checkoutTitle}</h6>
         

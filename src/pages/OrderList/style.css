@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1290px){
+@media (max-width: 1024px){
   .container_order_list{
     display: flex;
     justify-content: center;
