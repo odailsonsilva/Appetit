@@ -49,43 +49,67 @@ export default function Index(props) {
     const [selectedMonth, setSelectedMonth] = useState(0)
     const [selectedDay, setSelectedDay] = useState(0)
     const [listDays, setListDays] = useState([])
+    const [fistDays, setFistDays] = useState([])
+    const [today, setToday] = useState([])
     
     const selectDayFormat = selectedDay < 10 ? 
     `0${selectedDay}` : selectedDay
-    const selectMontFormt = selectedMonth < 10 ? 
+
+   const selectMontFormt = selectedMonth < 10 ? 
         `0${selectedMonth}` : selectedMonth
     //assim que abrir o calendario
+
     useEffect(() => {
         let today = new Date();
         setSelectedYear(today.getFullYear() )
         setSelectedMonth(today.getMonth())
         setSelectedDay(today.getDate())
 
-        
+
     }, [])
 
     useEffect(() => {
         let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate() 
         let newListDay = []
         
+    
+
+        let prevLastDay = new Date(selectedYear,
+            selectedMonth, 0
+        ).getDate()
+
+        console.log(prevLastDay)    
+
+        let firstDayMonthBack =  new Date(selectedYear,
+            selectedMonth, 1
+        )
+
+        let firstDayIndex = firstDayMonthBack.getDay()
+
+        console.log(firstDayIndex)    
+        let arrayDay = []
+
+        for(let x = firstDayIndex; x > 0; x--){
+            let test =  prevLastDay - x + 1
+            arrayDay.push(test)
+        }
 
         for(let i=1; i<=daysInMonth; i++){
             let d = new Date(selectedYear, selectedMonth, i)
-            let month = d.getMonth()
-            let day = d.getDate()
-
-            
+            let month = d.getMonth() - 1
+            let day = d.getDate()       
             month = month < 10 ? `0${month}` : month
             day = day < 10 ? `0${day}` : day
-
             newListDay.push({ 
                 number: i
-            })
-            
+            })     
         }
+        let today = new Date()
+        setToday(today.getDate())
 
+        setFistDays(arrayDay)
         setListDays(newListDay)
-
+        
     }, [selectedMonth, selectedYear])
 
   const handleLeftDateClick = () => {
@@ -104,6 +128,11 @@ export default function Index(props) {
       }
   }
 
+  const handleCancClick = () => {
+    const container = document.getElementById("container")
+    container.style.display = "none"
+  }
+
   const handleRightDateClick = () => {
     let mountDate = new Date(selectedYear, selectedMonth, selectedDay) 
     mountDate.setMonth( mountDate.getMonth() + 1 )
@@ -117,6 +146,9 @@ export default function Index(props) {
     container.style.display = "flex"
   }
 
+  const formt = Number(selectMontFormt) + 1
+  const formaMonth = formt < 10 ? 
+      `0${formt}` : formt
 
     return (
         <ContainerCalenderMain>
@@ -125,7 +157,7 @@ export default function Index(props) {
 
           <div className="input_label">
             <InputCalender
-                value={`${selectDayFormat}/${selectMontFormt}/${selectedYear}`}  
+                value={`${selectDayFormat}/${formaMonth}/${selectedYear}`}  
                 onClick={handleInputCalender}
                 
             />
@@ -145,7 +177,6 @@ export default function Index(props) {
               </ContainerArrows>
 
               <ContainerDaysMonth>
-        
                   {
                       days.map((item, key) => (
                           <DateItemWeekDay key={key}>{item}</DateItemWeekDay>
@@ -153,11 +184,24 @@ export default function Index(props) {
                   }
 
                   {
+                      fistDays.map((item, key) => (
+                        <DateItem key={key}>
+                         <DateItemNumber></DateItemNumber>
+                        </DateItem>
+                      ))
+                  }
+
+                  {
                       listDays.map((item, key) => (
                           <>
-                          <DateItem
+                          {
+                              
+                             <> 
+                            <DateItem
                               key={key}
-                              onClick={() => setSelectedDay(item.number) }
+                              onClick={item.number === today - 1 || item.number === today - 2 || item.number === today ? () => setSelectedDay(item.number)
+                                    : () => {}
+                                }
                               
                               style={{
                                   backgroundColor: item.number === selectedDay ?
@@ -169,15 +213,23 @@ export default function Index(props) {
                                   color: item.number === selectedDay ?
                                   '#fff' : null 
                               }}
+
+                                className={item.number === today - 1 || item.number === today - 2 || item.number === today  ? "twoLastDays" : ""}
                               >{item.number}</DateItemNumber>
                           </DateItem>
+                                        
+                                </>
+                          }
+                          
                           </>
                       ))
                   }
               </ContainerDaysMonth>
 
               <ContainerBtn>
-                  <button className="cancelar">CANCELAR</button>
+                  <button className="cancelar"
+                    onClick={handleCancClick}
+                  >CANCELAR</button>
                   <button
                       className="escolher" 
                       onClick={handleFinishClick}

@@ -95,6 +95,10 @@ export const DateItem = styled.button`
     border-radius: 50%;
     display: flex;
     align-items: center;
+
+    .twoLastDays{
+        color: #000;
+    }
 `
 
 export const DateItemWeekDay = styled.span`

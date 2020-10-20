@@ -98,9 +98,12 @@ export const BtnNew = styled(Link)`
   align-items: center;
   justify-content: center;
 
+  
+
   @media (max-width: 670px){
     width: 80%;
     margin-top: 16px;
+    order: -1
   }
 
   @media (max-width: 470px){
