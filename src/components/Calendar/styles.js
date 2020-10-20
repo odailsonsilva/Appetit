@@ -14,6 +14,24 @@ export const ContainerCalenderMain = styled.div`
 
     margin-bottom: 24px;
   }  
+
+  .input_label{
+    position: relative;
+
+    label{
+       font-size: 1.2rem;
+       line-height: 1.8rem;
+       color: rgba(0, 0, 0, 0.56);
+
+        position: absolute;
+        left: 16px;
+        top: -10px;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        background-color: #fafafa;
+        padding: 2px;
+   }
+  }
 `
 
 export const Container = styled.div`
@@ -171,7 +189,6 @@ export const InputCalender = styled.input`
    line-height: 2.4rem;
    color: rgba(0, 0, 0, 0.9);
    padding: 16px;
-
 
    @media(max-width: 1290px){
        width: 100%;

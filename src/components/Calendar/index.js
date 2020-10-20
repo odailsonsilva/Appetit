@@ -50,6 +50,7 @@ export default function Index(props) {
     const [selectedDay, setSelectedDay] = useState(0)
     const [listDays, setListDays] = useState([])
     const [fistDays, setFistDays] = useState([])
+    const [nextDays, setNextDays] = useState([])
     const [today, setToday] = useState([])
     
     const selectDayFormat = selectedDay < 10 ? 
@@ -71,22 +72,23 @@ export default function Index(props) {
     useEffect(() => {
         let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate() 
         let newListDay = []
-        
-    
+         
+        //proximos dias 
+        const date = new Date()
+        const lastDayIndex = new Date(date.getFullYear(),
+            date.getMonth() + 1, 0
+        ).getDay()
 
+        const nextDays = 7 - lastDayIndex - 1
+        const arrayNextDays = []
+        //dias anteriores
         let prevLastDay = new Date(selectedYear,
             selectedMonth, 0
         ).getDate()
-
-        console.log(prevLastDay)    
-
         let firstDayMonthBack =  new Date(selectedYear,
             selectedMonth, 1
         )
-
         let firstDayIndex = firstDayMonthBack.getDay()
-
-        console.log(firstDayIndex)    
         let arrayDay = []
 
         for(let x = firstDayIndex; x > 0; x--){
@@ -104,12 +106,19 @@ export default function Index(props) {
                 number: i
             })     
         }
+
+        for(let j=1; j <= nextDays; j++){
+            arrayNextDays.push(j)
+        }
+
         let today = new Date()
         setToday(today.getDate())
 
+        setNextDays(arrayNextDays)
         setFistDays(arrayDay)
         setListDays(newListDay)
-        
+
+
     }, [selectedMonth, selectedYear])
 
   const handleLeftDateClick = () => {
@@ -161,7 +170,7 @@ export default function Index(props) {
                 onClick={handleInputCalender}
                 
             />
-
+            <label>Data do pedido</label>
            
           </div>
           <Container id="container">
