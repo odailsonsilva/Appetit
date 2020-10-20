@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+
 import './style.css';
 
-import ImgTest from '../../assets/imgs/profile/profile.svg'
 import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
 
 import Header from '../../components/Header'
@@ -15,15 +15,14 @@ import ProgressBar from '../ProgressBar'
 import { useHistory } from 'react-router-dom';
 
 function PainelTwo(props) {
-
   
   const history = useHistory().location.pathname
-  const r = history == "/novo-pedido/checkout-product" ? 1 : 0
-  let imgSelect = r != 1 ? "https://s2.glbimg.com/0BsLY23sXDUg6wyeawk3Ur39CW0=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/H/m/TB0qseRj2xqTSntdQRPQ/cuscuz.jpg" : CheckboxImg
+  const r = history === "/novo-pedido/checkout-product" ? 1 : 0
+  let imgSelect = r !== 1 ? "https://s2.glbimg.com/0BsLY23sXDUg6wyeawk3Ur39CW0=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/H/m/TB0qseRj2xqTSntdQRPQ/cuscuz.jpg" : CheckboxImg
 
-  console.log( r)
   return (
       <div className="scrollE">
+        <div className="responsivo">
         <div className="header_container_painel_two">
           <Header 
             title={props.title} 
@@ -91,8 +90,10 @@ function PainelTwo(props) {
         </div> 
 
         <CheckoutBar true={1} url="/selecionar-cliente" checkoutTitle="Total: R$ 3,25"/>
+        </div>
       </div> 
     ); 
 }
 
-export default PainelTwo;
+
+export default (PainelTwo);

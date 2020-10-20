@@ -1,0 +1,14 @@
+    @media(max-width: 400px){
+    .products .scrollE {
+      width: 100%;
+    }
+    
+  
+    .scrollE  .container_info_painel{
+       width: 95%;
+       margin: 0 auto;
+       overflow: hidden;
+       display: flex;
+       flex-direction: column;
+     }
+   }

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-bottom: 24px;
-`;
+  
+`
 
 export const TotalProgress = styled.div`
     width: 100%;

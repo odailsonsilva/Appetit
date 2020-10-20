@@ -1,4 +1,4 @@
-import React, {useEffect, useState, setShow} from 'react'
+import React, {useEffect, useState} from 'react'
 import BtnNextImg from '../../assets/imgs/BtnNext.svg'
 import BtnBackImg from '../../assets/imgs/BtnBack.svg'
 import {
@@ -42,7 +42,6 @@ const days = [
     'Sab'
 ]
 
-const daySo = []
 
 export default function Index(props) {
     
@@ -72,14 +71,12 @@ export default function Index(props) {
 
         for(let i=1; i<=daysInMonth; i++){
             let d = new Date(selectedYear, selectedMonth, i)
-            let year = d.getFullYear()
             let month = d.getMonth() + 1
             let day = d.getDate()
 
             
             month = month < 10 ? `0${month}` : month
             day = day < 10 ? `0${day}` : day
-
 
             newListDay.push({ 
                 number: i

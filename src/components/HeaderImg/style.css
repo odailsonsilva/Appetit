@@ -20,7 +20,7 @@
 
 @media(max-width: 1290px){
   div.header_profile{
-    display: block;
+    display: none;
     position: relative;
   }
 }

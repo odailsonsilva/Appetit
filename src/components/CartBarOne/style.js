@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 
 export const ContainerBar = styled.div` 
   width: 100%;
@@ -21,12 +20,20 @@ export const ContainerBar = styled.div`
     align-items: center;
 
     p{
-      margin: 0 28px;
+      margin: 0 22px;
+      width: 20px;
+      text-align: center;
     }
 
     svg{
       cursor: pointer;
+      flex: 1;
     }
+  }
+
+  button{
+    background: none;
+    border: none;
   }
 
   a{
@@ -48,5 +55,14 @@ export const ContainerBar = styled.div`
 
     cursor: pointer;
   }
+
+  @media(max-width: 400px){
+    padding: 16px;
+  
+    a{
+      width: 168px;
+    }
+  }
   
 `
+

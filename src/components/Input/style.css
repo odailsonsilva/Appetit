@@ -44,11 +44,25 @@
   line-height: 1.8rem;
   color: #ff8822;
   z-index: 2;
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 2px;
 }
 
 .form-div input:valid, .form-div input:focus{
-  border: 2px solid #FF8822;
+  border: 2px solid rgba(0, 0, 0, 0.56);
   z-index: 1;
+}
+.form-div input:focus{
+  border: 2px solid #ff8822;
+}
+
+.form-div input:valid + .form-label{
+  color: rgba(0, 0, 0, 0.56);
+}
+
+@media(max-width: 1290px){
+  .form-div{
+    max-width: 90%;
+  }
+
 }

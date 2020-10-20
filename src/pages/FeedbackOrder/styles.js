@@ -106,6 +106,7 @@ export const BtnNew = styled(Link)`
   @media (max-width: 470px){
     width: 90%;
     margin-top: 16px;
+    order: -1;
   }
 `;
     
@@ -136,5 +137,6 @@ export const BtnOrder = styled(Link)`
   @media (max-width: 470px){
     width: 90%;
     margin-top: 16px;
+    
   }
 `;

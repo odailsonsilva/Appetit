@@ -1,14 +1,16 @@
 .header_component{
-  margin: 0 40px;
+  margin: 0 40px; 
 }
 
 .header_component.none_margin{
   margin:0;
+
 }
 
 .header_container{
   width: 100%;
   padding-bottom: 10px;
+
 }
 
 .header_container{
@@ -34,10 +36,25 @@
 
 @media (max-width: 1290px){
   .header_container{
-    display: inline;
+    display: block;
   }
 
   .header_container a{
     display: block;
+  }
+}
+
+
+@media (max-width: 400px){
+   .header_component,
+  .products .scrollE .responsivo .header_container_painel_two .header_component.none_margin
+  {
+    width: 95%;
+    margin-top: 16px;
+    margin-left: 16px;
+    
+  }
+  .products .scrollE .responsivo .header_container_painel_two .header_component .header_container h3{
+    width: 95%;
   }
 }

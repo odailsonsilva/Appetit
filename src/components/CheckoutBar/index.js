@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import {ContainerBar} from './style'
 import {MdKeyboardArrowRight} from 'react-icons/md'
 
@@ -20,3 +20,5 @@ export default function Index(props) {
 
   )
 }
+
+

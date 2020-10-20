@@ -29,7 +29,7 @@ function Payment() {
             passo={3}
             h6="Para quem você está vendendo?"
             showIconBack
-            route="/selecionar-cliente/checkout-client"
+            route="/selecionar-cliente"
           />
         </div>
         

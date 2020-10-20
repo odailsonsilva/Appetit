@@ -80,3 +80,10 @@
 
   color: rgba(0, 0, 0, 0.56);
 }
+
+@media(max-width: 1290px){
+  #container-login form .btn-entry{
+    width: 90%;
+  }
+
+}
