@@ -3,8 +3,12 @@ import styled from 'styled-components';
 import Calender from '../../assets/imgs/calender.svg'
 
 export const ContainerCalenderMain = styled.div`
-  margin-top: 24px;
   position: relative;
+  margin: 24px 25px 0;
+
+  @media(max-width: 430px){
+      margin: 24px 0 0;
+  }
 
   h6{
     font-size: 1.6rem;

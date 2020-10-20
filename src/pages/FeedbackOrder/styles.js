@@ -13,6 +13,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
   }
+
 `;
 
 export const Grid1 = styled.div`
@@ -28,6 +29,9 @@ export const Grid2 = styled.div`
   justify-items: center;
   margin: 0 auto;
 
+  @media(max-width: 430px){
+    width: 90%;
+  }
 `;
 
 
@@ -40,6 +44,11 @@ export const ContainerImg = styled.div`
 
   & .img-main{
       margin-bottom: 40px;
+
+
+      @media(max-width: 430px){
+        width: 90%;
+      }
   }
 
   & p{
