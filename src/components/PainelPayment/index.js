@@ -55,7 +55,7 @@ function PainelPayment(props) {
         </div>          
       </div>
 
-      <div className="container_info_painel">
+      <div className="container_calendario">
        <Calender 
         handleDate={handleSelectedDate}
        />

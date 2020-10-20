@@ -4,11 +4,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
 
-    .container_info_painel{
-        width: 90%;
+    .container_calendario{
+        width: 95%;
+        margin: 0 auto;        
     }
 
-    @media(max-width: 430px){
+    @media(max-width: 400px){
      
       width: 100%;
     
