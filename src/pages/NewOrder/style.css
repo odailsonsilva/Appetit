@@ -17,9 +17,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.container_new_order .container_order .container_main .abstract_painel{
-  background-color: red;
-}
 
 .container_new_order .container_order .container_main .painel{
   width: 100%;
@@ -42,3 +39,4 @@
   }
 
 }
+

@@ -7,7 +7,6 @@ import IconOrders from "../../assets/imgs/icon-orders.svg";
 import IconOrdersB from "../../assets/imgs/icon-orders-b.svg";
 
 import IconClientsB from "../../assets/imgs/icon-clients.svg";
-import IconClients from "../../assets/imgs/icon-clients-e.svg";
 
 import { Icon } from "./StyleComponent";
 import "./style.css";
@@ -25,7 +24,7 @@ class SideBar extends React.Component {
   };
 
   menuShow = (e) => {
-    if (this.state.show == "show") {
+    if (this.state.show === "show") {
       this.setState({
         show: "none",
         activeAttr: false,
@@ -43,7 +42,7 @@ class SideBar extends React.Component {
   };
 
   funActiveLink = (e) => {
-    if (this.state.activeLink == false) {
+    if (this.state.activeLink === false) {
       this.setState({
         activeLink: true,
         activeLink2: false,
@@ -52,7 +51,7 @@ class SideBar extends React.Component {
   };
 
   funActiveLink2 = (e) => {
-    if (this.state.activeLink2 == false) {
+    if (this.state.activeLink2 === false) {
       this.setState({
         activeLink: false,
         activeLink2: true,

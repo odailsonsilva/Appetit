@@ -2,8 +2,6 @@ import React from 'react';
 
 import  './style.css';
 
-import { useHistory } from 'react-router-dom';
-
 import SideBar from '../../components/SideBar/SideBar'
 import HeaderImg from '../../components/HeaderImg'
 import Painel from '../../components/PainelD'

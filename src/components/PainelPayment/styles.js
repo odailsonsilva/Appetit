@@ -7,10 +7,34 @@ export const Container = styled.div`
     .container_info_painel{
         width: 90%;
     }
+
+    @media(max-width: 400px){
+     
+      width: 100%;
+    
+    
+  
+    .container_info_painel{
+       width: 95%;
+       margin: 0 auto;
+       overflow: hidden;
+       display: flex;
+       flex-direction: column;
+
+       .barPay{
+           width: 90%;
+       }
+     }
+   }
+
 `;
 
 export const HangleProgressBar = styled.div`
     width: 90%;
+
+    @media(max-width: 400px){
+        width: 95%;
+    }
 `
 
 export const BtnFinish = styled.form`

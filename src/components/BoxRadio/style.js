@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import IconBefore from '../../assets/imgs/radio/radio_button_off.png'
@@ -9,7 +8,7 @@ export const Container = styled.div`
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   height: 56px;
   margin-top: 16px;
   
@@ -49,4 +48,10 @@ export const Container = styled.div`
     width: 100%;
     cursor: pointer;
   }
+
+  @media(max-width: 768px){
+    width: 95%;
+  }
+  
+  
 `

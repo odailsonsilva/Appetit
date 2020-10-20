@@ -1,19 +1,18 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+
 import {Link} from 'react-router-dom'
 import {MdAdd, MdRemove} from 'react-icons/md'
 
 import {ContainerBar} from'./style'
 
-export default function Index(props) {
 
+function Index(props) {
   const [quant, setQuant] = useState(1)
   const [value, setValue] = useState(3.50)
   const [valueFormat, setValueFormat] = useState(
     (value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
   )
-
-    
-  console.log(value)
+  
 
   function handleClickMore(){
     let q = quant + 1
@@ -44,22 +43,26 @@ export default function Index(props) {
 
   return (
     <ContainerBar style={{
-      display: props.displayB == true ? "none" : "flex"
+      display: props.displayB === true ? "none" : "flex"
     }}>
       <div className="btns-add-remove">
+        <button>
         <MdRemove 
           size={24} 
           color={quant > 1 ? "#ff8822" : "rgba(0, 0, 0, 0.56)"}
           onClick={handleClickRemove} 
         />
+        </button>
 
         <p>{quant}</p>
 
-        <MdAdd 
-          size={24} 
-          color="ff8822"
-          onClick={handleClickMore}
-        />
+        <button>
+          <MdAdd 
+            size={24} 
+            color="ff8822"
+            onClick={handleClickMore}
+          />
+        </button>
       </div>
       
       <Link to="/novo-pedido/checkout-product">
@@ -69,3 +72,6 @@ export default function Index(props) {
     </ContainerBar>
   )
 }
+
+
+export default Index

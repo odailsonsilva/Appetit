@@ -11,6 +11,8 @@ import ImgClient1 from '../../assets/imgs/profile/client-1.svg'
 import ImgClient2 from '../../assets/imgs/profile/client-2.svg'
 import ImgClient3 from '../../assets/imgs/profile/client-3.svg'
 
+import './styles.css'
+
 function PainelClient(props) {
   const [cliets, setClients] = useState(null)
 

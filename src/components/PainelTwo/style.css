@@ -31,13 +31,13 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
-.container_info_painel p{
+.scrollE .container_info_painel p{
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: rgba(0, 0, 0, 0.56);
 
   margin-bottom: 24px;
-  width: 410px;
+  width: 100%;
 }
 
 .container_info_painel h6{
@@ -58,3 +58,30 @@
 .scrollE .btn_margin{
   margin-bottom: 50px;
 }
+
+
+@media(max-width: 500px){
+  .container_order .main_new_order .scrollE{
+    width: 100%;
+  }
+
+  .container_new_order p{
+    width: 90%;
+    overflow: hidden;
+  }
+}
+
+@media(max-width: 400px){
+  .products .scrollE .responsivo{
+    width: 100%;
+  }
+  
+
+  .products .scrollE .responsivo .container_info_painel{
+     width: 95%;
+     margin: 0 auto;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+   }
+ }

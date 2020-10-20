@@ -12,7 +12,7 @@ export default function Index(props) {
         <input type="text" placeholder="Procure o pedido aqui..." id="search"/>
         {
           props.filterActive ? 
-          <img  src={IconFilter} className="cursor"/> : ''
+          <img  src={IconFilter} className="cursor"/> : null
         }
       </form>
   )

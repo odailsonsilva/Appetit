@@ -9,7 +9,7 @@ export const ContainerBar = styled(Link)`
 
   position: sticky;
   bottom: 0;
-  z-index: ${props=>props.true == 1 ? -999 : 0};
+  z-index: ${props=>props.true === 1 ? -999 : 0};
 
   display: flex;
   justify-content: space-between;
@@ -31,5 +31,9 @@ export const ContainerBar = styled(Link)`
     h6{
       margin-right: 14px;
     }
+  }
+
+  @media(max-width: 400px){
+    padding: 22px 14px
   }
 `

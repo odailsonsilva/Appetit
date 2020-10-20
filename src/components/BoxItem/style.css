@@ -38,3 +38,15 @@
   right: 16px;
 }
 
+
+@media (max-width: 450px){
+  .box_item .container_infos{
+    width: 60%;
+  }
+  .box_item .container_infos p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+}

@@ -25,7 +25,7 @@ function PainelPayment(props) {
   }
 
   return (
-    <Container className="scrollE"  >
+    <Container className="scrollE" >
 
       <div className="header_container_painel_two">
         <Header 
@@ -36,10 +36,12 @@ function PainelPayment(props) {
 
       <div className="container_info_painel">
         <p>{props.p}</p>
-        <HangleProgressBar>
+        
           <p>Passo {props.passo} de 3</p>
+          <div className="barPay">
           <ProgressBar passo={props.passo}/>
-        </HangleProgressBar>
+          </div>
+       
         
         <h6>{props.h6}</h6>
         
