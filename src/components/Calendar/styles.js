@@ -50,7 +50,7 @@ export const Container = styled.div`
   top: -245px; 
   left: 0;
 
-  @media(max-width: 400px){
+  @media(max-width: 430px){
       top: -300px;
       left: 0px;
   }

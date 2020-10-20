@@ -27,7 +27,7 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
-@media (max-width: 400px){
+@media (max-width: 430px){
   .products .scrollE .container_list_item .divisor_li{
     display: flex;
     flex-direction: column;

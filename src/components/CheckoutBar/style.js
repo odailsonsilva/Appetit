@@ -33,7 +33,7 @@ export const ContainerBar = styled(Link)`
     }
   }
 
-  @media(max-width: 400px){
+  @media(max-width: 430px){
     padding: 22px 14px
   }
 `

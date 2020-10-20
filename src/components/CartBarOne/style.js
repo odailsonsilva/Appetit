@@ -56,7 +56,7 @@ export const ContainerBar = styled.div`
     cursor: pointer;
   }
 
-  @media(max-width: 400px){
+  @media(max-width: 430px){
     padding: 16px;
   
     a{

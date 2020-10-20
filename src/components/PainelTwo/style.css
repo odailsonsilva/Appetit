@@ -71,7 +71,7 @@
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 430px){
   .products .scrollE .responsivo{
     width: 100%;
   }

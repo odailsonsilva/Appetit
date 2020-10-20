@@ -8,7 +8,7 @@ export const Container = styled.div`
         width: 90%;
     }
 
-    @media(max-width: 400px){
+    @media(max-width: 430px){
      
       width: 100%;
     
@@ -32,7 +32,7 @@ export const Container = styled.div`
 export const HangleProgressBar = styled.div`
     width: 90%;
 
-    @media(max-width: 400px){
+    @media(max-width: 430px){
         width: 95%;
     }
 `

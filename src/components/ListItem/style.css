@@ -14,7 +14,7 @@
   border-bottom: 8px solid rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 400px){
+@media (max-width: 430px){
   .container_list_item{
     margin-left: 0;
   }
