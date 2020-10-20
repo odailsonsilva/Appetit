@@ -21,12 +21,14 @@ function NewOrder() {
           <HeaderImg />
             <Header icon route="/lista-de-pedidos" title="Pedidos de Luiz" none_margin/>
             
-            <HistoryOrder>
-              <BoxItem img={Profile} title="titulo" text="paragrafo" value="R$ 3,50"/>
+            <HistoryOrder active date="13/05/2019">
+              <BoxItem img="https://img.itdg.com.br/tdg/images/recipes/000/178/357/328308/328308_original.jpg?w=1200"               
+              title="titulo" text="paragrafo" value="R$ 3,50"/>
             </HistoryOrder>
 
-            <HistoryOrder>
-              <BoxItem  img={Profile} title="titulo" text="paragrafo" value="R$ 3,50"/>
+            <HistoryOrder active date="09/05/2019">
+              <BoxItem  img="https://img.itdg.com.br/tdg/images/recipes/000/178/357/328308/328308_original.jpg?w=1200" 
+              title="titulo" text="paragrafo" value="R$ 3,50"/>
             </HistoryOrder>
           </div>
         </div>

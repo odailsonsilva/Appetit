@@ -32,7 +32,7 @@ class OrderList extends React.Component {
               <BtnAdd/>
               <InputSearch filterActive/>
             </div>
-            <HistoryOrder>
+            <HistoryOrder date="13/05/2019" valueDay="45,80">
               <BoxItem  img={Client1} 
                 title="Marcel Batista" 
                 text="cuscuz com calabresa, suco de laranja. " 
@@ -51,7 +51,7 @@ class OrderList extends React.Component {
                />
             </HistoryOrder>
 
-            <HistoryOrder>
+            <HistoryOrder date="09/05/2019" valueDay="123,80">
               <BoxItem  
                 img={Client1} 
                 title="Fernanda Siqueira" 
@@ -72,7 +72,7 @@ class OrderList extends React.Component {
                />
             </HistoryOrder>
 
-            <HistoryOrder>
+            <HistoryOrder date="08/05/2019" valueDay="224,80">
               <BoxItem  
                 img={Client1} 
                 title="Fernanda Siqueira" 

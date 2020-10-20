@@ -11,6 +11,11 @@
   margin-bottom: 16px;
 }
 
+.history_container .you{
+  opacity: 0.5;
+  font-weight: 400;
+}
+
 .history_container .box_item{
   margin-bottom: 8px;
 }

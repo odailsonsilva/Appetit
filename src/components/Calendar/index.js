@@ -57,8 +57,8 @@ export default function Index(props) {
     //assim que abrir o calendario
     useEffect(() => {
         let today = new Date();
-        setSelectedYear(today.getFullYear())
-        setSelectedMonth(today.getMonth() )
+        setSelectedYear(today.getFullYear() )
+        setSelectedMonth(today.getMonth())
         setSelectedDay(today.getDate())
 
         
@@ -71,7 +71,7 @@ export default function Index(props) {
 
         for(let i=1; i<=daysInMonth; i++){
             let d = new Date(selectedYear, selectedMonth, i)
-            let month = d.getMonth() + 1
+            let month = d.getMonth()
             let day = d.getDate()
 
             

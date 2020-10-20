@@ -170,7 +170,7 @@ export const InputCalender = styled.input`
 
 
    @media(max-width: 1290px){
-       width: 98%;
+       width: 100%;
    }
   
 `
