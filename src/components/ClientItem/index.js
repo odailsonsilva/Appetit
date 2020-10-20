@@ -1,122 +1,56 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import {connect} from 'react-redux'
 
-import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
-import { InputClient } from './styles';
+import {selectedClient, noFocus} from '../../store/actions/selectClientActions'
+import { Container } from './styles';
+
 
 function ClientItem(props) {
-  const [selectedClient, setSelectedClient] = useState(false)
-  const [quant, setQuant] = useState(null)
-
-  function handleSelectedClien(){
-
-    if(selectedClient === false){
-       setSelectedClient(true)
-       if(props.id === 1){
-        setQuant(quant + 1)
-       }else  if(props.id === 2){
-        setQuant(quant + 1)
-       }else  if(props.id === 3){
-        setQuant(quant + 1)
-       }else  if(props.id === 4){
-        setQuant(quant + 1)
-       }else  if(props.id === 5){
-        setQuant(quant + 1)
-       }else  if(props.id === 6){
-        setQuant(quant + 1)
-       }
-
-
-    }else{
-      setSelectedClient(false)
-      if(props.id === 1){
-        setQuant(quant - 1)
-       }
+  
+  const handleClickClient = () => {
+    if(document.querySelector(".checkbox_class:checked")  ){
+      props.selectedClient(1)
+    }else if(document.querySelector(".checkbox_class") ){
+      props.noFocus(0)
     }
   }
 
-
+  
   return(
-    <InputClient
-      onClick={handleSelectedClien}
+    <> 
+    <Container
+      src={props.url}
+      onChange={handleClickClient}
     >
-        <li className="item_list_conteiner item_client">
-        {
-         selectedClient ?  <div class="container-checkbox"><img src={CheckboxImg} className="checkbox"/></div>  : 
-                            <img src={props.url} alt="imagem-produto" />
-         }
-            <p>{props.title}</p>
-        </li>
-        {
-        props.no_divisor ? "" : <div className="divisor_li"></div>  
-        }
-  </InputClient>
+      <input type="checkbox" id={props.id} className="checkbox_class" value={props.id}/>
+      <label htmlFor={props.id}>{props.title}</label>          
+  </Container>
+    {
+    props.no_divisor ? "" : <div className="divisor_li"></div>  
+    }
+    </>
   );
+  
 }
 
-export default ClientItem;
+function mapDispatchToProps(dispatch){
+  return{
+    selectedClient(newValue){
+      const action = selectedClient(newValue)
+      dispatch(action)
+    },
+    noFocus(newValue){
+      const action = noFocus(newValue)
+      dispatch(action)
+    }
+  }
+}
 
+function mapStateToProps(state){
+  return{
+    quant: state.quant
+  }
+}
 
+export default connect(mapStateToProps, mapDispatchToProps)(ClientItem);
 
-
-
-// import React, {useState, useEffect} from 'react';
-
-// import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
-// import { InputClient } from './styles';
-
-// function ClienItem(props) {
-//   const [selectedClient, setSelectedClient] = useState(false)
-//   const [quant, setQuant] = useState(null)
-
-//   function handleSelectedClien(){
-
-//     if(selectedClient === false){
-//        setSelectedClient(true)
-//        if(props.id === 1){
-//         setQuant(quant + 1)
-//        }else  if(props.id === 2){
-//         setQuant(quant + 1)
-//        }else  if(props.id === 3){
-//         setQuant(quant + 1)
-//        }else  if(props.id === 4){
-//         setQuant(quant + 1)
-//        }else  if(props.id === 5){
-//         setQuant(quant + 1)
-//        }else  if(props.id === 6){
-//         setQuant(quant + 1)
-//        }
-
-
-//     }else{
-//       setSelectedClient(false)
-//       if(props.id === 1){
-//         setQuant(quant - 1)
-//        }
-//     }
-//   }
-
-
-//   return(
-//     <InputClient
-//       onClick={handleSelectedClien}
-//       to={quant !== 0 ? "/selecionar-cliente/checkout-client" : "/selecionar-cliente"}
-//     >
-//         <li className="item_list_conteiner item_client">
-
-//           {
-            
-//           }
-//         {
-//          selectedClient ?  <div class="container-checkbox"><img src={CheckboxImg} className="checkbox"/></div>  : 
-//                             <img src={props.url} alt="imagem-produto" />
-//          }
-//             <p>{props.title}</p>
-//         </li>
-//         {
-//         props.no_divisor ? "" : <div className="divisor_li"></div>  
-//         }
-//   </InputClient>
-//   );
-// }
-
-// export default ClienItem;

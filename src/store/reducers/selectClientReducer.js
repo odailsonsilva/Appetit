@@ -1,15 +1,16 @@
-const initialValues = {
-    id: 0,
-    name: 'default',
-    image: 'url-img'
-}
+const quant = 0
 
-export default function(state = initialValues, action){
+export default function(state = quant, action){
     switch(action.type){
         case 'SELECTED_CLIENT': 
             return{
                 ...state,
-                initialValues: action.payload
+                quant: action.payload
+            }
+        case 'NO_SELECTED': 
+            return{
+                ...state,
+                quant: action.payload
             }
         default:
             return state

@@ -12,7 +12,6 @@ function ClientContainer(props) {
   const [selectedClient, setSelectedClient] = useState(false)
 
   function handleSelectedClien(){
-    let soma
     if(selectedClient === false ){
        setSelectedClient(true)
     }else{

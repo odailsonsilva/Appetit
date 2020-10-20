@@ -5,7 +5,7 @@ import inputReducer from './reducers/inputReducer'
 
 const reducers = combineReducers({
     inputValue: inputReducer,
-    selectClient: selectClientReducer
+    quant: selectClientReducer
 })
 
 function storeConfig(){

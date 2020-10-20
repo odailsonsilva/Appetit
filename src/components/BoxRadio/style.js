@@ -11,7 +11,6 @@ export const Container = styled.div`
   width: 100%;
   height: 56px;
   margin-top: 16px;
-  
 
   display: flex;
   align-items: center;
@@ -50,7 +49,8 @@ export const Container = styled.div`
   }
 
   @media(max-width: 768px){
-    width: 95%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
   }
   
   

@@ -4,3 +4,10 @@ export function selectedClient(newValue){
         payload: newValue
     }
 }
+
+export function noFocus(newValue){
+    return{
+        type: 'NO_SELECTED',
+        payload: newValue
+    }
+}

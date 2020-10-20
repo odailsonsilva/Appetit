@@ -1,17 +1,23 @@
 import React from 'react'
 
+import {connect} from 'react-redux'
 
 import {Link} from 'react-router-dom'
 import './style.css'
 
 function Index(props) {
-  const divImg = props.url === 'https://assets.instabuy.com.br/ib.item.image.big/b-93dff939ea034b21a77a7a32cf75dc09.jpeg' ? true : false
+  const {inputValue} = props
 
   return (
   
       <Link to={props.router ? "/detalhes-do-produto/1" : ""}>
         <li className="item_list_conteiner">
-           <img src={props.url} alt="imagem-produto"/>     
+            {
+              props.id === 1 && inputValue > 0 ? 
+                <div className="ContaienrImg"><img className="check_img" src={props.url} alt="imagem-produto"/></div>
+              : <img src={props.url} alt="imagem-produto"/> 
+            }
+               
            <p>{props.title}</p>
         </li>
         {
@@ -23,6 +29,11 @@ function Index(props) {
   )
 }
 
+function mapStateToProps(state){
+  return{
+    inputValue: state.inputValue.inputValue
+  }
+}
 
 
-export default Index
+export default connect(mapStateToProps)(Index)

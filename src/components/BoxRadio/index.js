@@ -7,9 +7,6 @@ import {Container} from './style'
 
 
 function Index(props) {
-  const {inputValue} = props
-
-  console.log(inputValue)
   return (
     <>
     <Container> 

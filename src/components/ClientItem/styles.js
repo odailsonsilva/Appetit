@@ -1,26 +1,48 @@
 import styled from 'styled-components';
-// import {MdCheckBoxOutlineBlank} from 'react-icons/md'
-// import CheckCircleOutline from 'material-ui/svg-icons/action/check-circle-  ';
+import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
 
-export const InputClient = styled.div`
+
+export const Container = styled.div`
   cursor: pointer;     
+  width: 90%;
+  height: 56px;
+  display: flex;
+  margin: 16px 0 16px;
+  align-items: center;
+  
+  input[type="checkbox"]{
+    display: none;
 
-  div.container-checkbox{
-    width: 40px;
-    height: 40px;
-    background: #ff8822;
-    border-radius: 50%;
+    &+label::before{
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url(${props=> props.src});
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 8px 0 0;
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img.checkbox{
-      background: #ff8822;
-      width: 20px;
-      height: 20px;
+    &:checked + label:before{
+      content: "";
+      width: 40px;
+      height: 40px;
+      background:#ff8822 url(${CheckboxImg}) no-repeat center center;
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 8px 0 0;
+      background-color: ;
+      border-radius: 50%;
     }
   }
 
+  label{
+    cursor: pointer; 
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 16px;
+  }
   
   `;
 

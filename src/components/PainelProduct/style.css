@@ -123,7 +123,7 @@
 
   .products .scrollE  .container_info_painel{
      width: 95%;
-     margin: 0 16px;
+     margin: 0 auto;
      overflow: hidden;
      display: flex;
      flex-direction: column;
@@ -134,8 +134,12 @@
     margin: 24px auto 0;
    }
 
+   .products .scrollE .product_type{
+     width: 100%;
+   }
+
    .products .scrollE .comments_area input{
-    width: 95%;
+    width: 100%;
    }
 
    .comments_area input{

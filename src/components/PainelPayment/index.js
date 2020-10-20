@@ -30,7 +30,7 @@ function PainelPayment(props) {
       <div className="header_container_painel_two">
         <Header 
           title={props.title} 
-          route={props.route} 
+          route="/selecionar-cliente"
           icon={props.showIconBack}/>
       </div>
 

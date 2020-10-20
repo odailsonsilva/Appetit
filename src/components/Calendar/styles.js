@@ -30,7 +30,12 @@ export const Container = styled.div`
 
   position: absolute;
   top: -245px; 
-  left: 0
+  left: 0;
+
+  @media(max-width: 400px){
+      top: -300px;
+      left: 0px;
+  }
 `;
 
 export const HeaderCalender = styled.div`
@@ -150,7 +155,7 @@ export const ContainerBtn = styled.div`
 export const InputCalender = styled.input`
    cursor: pointer;
 
-   width: 90%;
+   width: 100%;
    height: 56px;
    box-sizing: border-box;
    border-radius: 5px;
@@ -162,5 +167,10 @@ export const InputCalender = styled.input`
    line-height: 2.4rem;
    color: rgba(0, 0, 0, 0.9);
    padding: 16px;
+
+
+   @media(max-width: 1290px){
+       width: 98%;
+   }
   
 `

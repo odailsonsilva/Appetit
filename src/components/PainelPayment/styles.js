@@ -22,7 +22,7 @@ export const Container = styled.div`
        flex-direction: column;
 
        .barPay{
-           width: 90%;
+           width: 100%;
        }
      }
    }
@@ -41,9 +41,9 @@ export const BtnFinish = styled.form`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 90%;
+    width: 98%;
     margin-top: 40px;
-
+    margin-bottom: 20px;
    
     
     button{
