@@ -21,7 +21,7 @@ export default function Routes(){
         <Route path="/pedidos-do-usuario/:id" component={UserOrder}/> 
         <Route path="/detalhes-do-produto/:id" component={ProductDetails}/> 
         <Route path="/novo-pedido/checkout-product" component={NewOrder}/>
-        <Route path="/selecionar-cliente" component={ClientSelect}/>
+        <Route path="/selecionar-cliente"  component={ClientSelect}/>
         <Route path="/status-de-pagamento" component={Payment}/>
         <Route path="/feedback-do-pedido" component={FeedbackOrder}/>
       </Switch>

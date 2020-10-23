@@ -7,10 +7,18 @@ import {useHistory} from 'react-router-dom'
 export default function Index(props) {
   const history = useHistory().location.pathname
 
+  const saveClients = () => {
+    localStorage.setItem("clients", JSON.stringify(props.selectedClient));
+  };
+
   return (
-    <ContainerBar to={props.url} true={history !== "/novo-pedido/checkout-product" && props.active !== 1 ? 1 : 0}>
+    <ContainerBar
+      to={props.url} 
+      true={history !== "/novo-pedido/checkout-product" && props.active !== 1 ? 1 : 0}
+      onClick={props.ativedClient ? () => saveClients() : ''}
+     >
       
-      <h6>{props.checkoutTitle}</h6>
+      <h6>{props.quant} clientes selecionados</h6>
         
       <div>
         <h6>Avançar</h6>

@@ -14,10 +14,67 @@ import ImgClient3 from '../../assets/imgs/profile/client-3.svg'
 
 import './styles.css'
 
+const clientsList = [
+  {
+    id: 1,
+    name: "Justine Marshall",
+    image: ImgClient1,
+  },
+  {
+    id: 2,
+    name: "Bairam Frootan",
+    image: ImgClient2,
+  },
+  {
+    id: 3,
+    name: "Tua Manuera",
+    image: ImgClient3,
+  },
+  {
+    id: 4,
+    name: "Justine Marshall",
+    image: ImgClient1
+  },
+  {
+    id: 5,
+    name: "Bairam Frootan",
+    image: ImgClient2,
+  },
+  {
+    id: 6,
+    name: "Tua Manuera",
+    image: ImgClient3,
+  },
+]
+
 function PainelClient(props) {
   const {quant} = props.quant
 
-  console.log(quant)
+  const [seletedClient, setSelectedClient] = useState([])
+
+  const addClient = (client) => {
+    const desClient = {
+      id: client.id,
+      name: client.name,
+      image: client.image
+    }
+  
+    const findClient = seletedClient.find((i) => i.id === desClient.id)
+
+    if(!findClient){
+      setSelectedClient([...seletedClient, desClient])
+    } else {
+      const filterClient = seletedClient.filter(
+        i => i.id !== desClient.id
+      )
+      setSelectedClient(filterClient)
+    }
+    
+  }
+
+  const quanti = seletedClient.length
+  const arrowSelected = seletedClient
+
 
   return (
     <div className="scrollE">
@@ -39,22 +96,33 @@ function PainelClient(props) {
 
 
 
-      <ListItem >
-          <ClientItem url={ImgClient1} title="Justine Marshall"  id={1}
-  
-          />
-          <ClientItem url={ImgClient2} title="Bairam Frootan"   id={2}/>
-          <ClientItem url={ImgClient3} title="Tua Manuera"  id={3}/>
-          <ClientItem url={ImgClient1} title="Justine Marshall"  id={4}/>
-          <ClientItem url={ImgClient2} title="Bairam Frootan"  id={5}/>
-          <ClientItem url={ImgClient3} title="Tua Manuera"  id={6}  no_divisor/>
+      <ListItem>
+          {
+            clientsList.map( client => 
+              <ClientItem 
+                key={client.id}
+                client={client}
+                select={() => addClient(client)}
+              />
+            )
+          } 
       </ListItem>
 
-      <CheckoutBar checkoutTitle="3 clientes selecionados" url="/status-de-pagamento" active={quant}/>
+      {
+        seletedClient.length >= 1 &&
+          <CheckoutBar  
+            url="/status-de-pagamento" 
+            active={1}
+            selectedClient={arrowSelected}
+            quant={quanti}
+            ativedClient
+          />
+      }
+
+      
     </div>
   );
 }
-
 
 
 function mapStateToProps(state){

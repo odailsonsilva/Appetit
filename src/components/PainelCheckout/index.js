@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 
 import { 
     Container,
@@ -7,9 +7,6 @@ import {
     TotalContainer
 } from './styles';
 
-import Client1 from '../../assets/imgs/profile/client-1.svg'
-import Client2 from '../../assets/imgs/profile/client-2.svg'
-import Client3 from '../../assets/imgs/profile/client-3.svg'
 
 import Header from '../Header'
 
@@ -17,6 +14,9 @@ import {useHistory} from 'react-router-dom'
 
 function PainelCheckout(props) {
   const history = useHistory().location.pathname
+  const clientCart = localStorage.getItem("clients");
+  const clientsParse = JSON.parse(clientCart);
+  
 
   return (
       <Container className="abstract_painel">
@@ -50,26 +50,17 @@ function PainelCheckout(props) {
             <>
                   <CheckoutList>
                     <h4>Clientes</h4>
-                    <CheckoutItem divisorTrue>
-                        <div>
-                          <img src={Client1} />
-                          <p>Justine Marshall</p>
-                        </div>
-                    </CheckoutItem>
-
-                    <CheckoutItem divisorTrue>
-                        <div>
-                          <img src={Client2} />
-                          <p>Bairam Frootan</p>
-                        </div>
-                    </CheckoutItem>
-
-                    <CheckoutItem divisorTrue>
-                        <div>
-                          <img src={Client3} />
-                          <p>Tua Manuera</p>
-                        </div>
-                    </CheckoutItem>
+                    {
+                      clientsParse.map( client =>
+                        <CheckoutItem divisorTrue>
+                          <div>
+                            <img src={client.image} />
+                            <p>{client.name}</p>
+                          </div>
+                      </CheckoutItem>
+                        )
+                    }
+                    
                 </CheckoutList>
 
             <div className="divisor"></div>
