@@ -11,6 +11,10 @@ export const Container = styled.div`
   div.divisor{
     border-bottom: 8px solid rgba(0, 0, 0, 0.08);
   }
+
+  .header_container_painel_two.header-chckout{
+      margin-top: 76px;
+  }
 `;
 
 export const CheckoutList = styled.ul`

@@ -48,7 +48,6 @@ const clientsList = [
 ]
 
 function PainelClient(props) {
-  const {quant} = props.quant
 
   const [seletedClient, setSelectedClient] = useState([])
 
@@ -116,6 +115,7 @@ function PainelClient(props) {
             selectedClient={arrowSelected}
             quant={quanti}
             ativedClient
+            checkoutTitle="clientes selecionados"
           />
       }
 

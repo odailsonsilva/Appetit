@@ -93,7 +93,6 @@ class SideBar extends React.Component {
               </li>
               <li>
                 <Link
-                  to="/lista-de-pedidos"
                   className={this.state.activeLink2 ? "active b" : ""}                
                 >
                   ENCERRADOS

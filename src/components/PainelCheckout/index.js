@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import { 
     Container,
@@ -20,13 +20,14 @@ function PainelCheckout(props) {
 
   return (
       <Container className="abstract_painel">
-          <div className="header_container_painel_two">
-          <Header 
-            title="Novo pedido" 
-            showIconBack 
-            route={props.route}
-            icon={props.showIconBack}
-          />
+          <div className="header_container_painel_two header-chckout">
+
+            <Header 
+              title="Novo pedido" 
+              showIconBack 
+              route={props.route}
+              icon={props.showIconBack}
+            />
           </div>
 
           <CheckoutList>
@@ -44,7 +45,7 @@ function PainelCheckout(props) {
             <div className="divisor"></div>
 
           {
-            history == '/selecionar-cliente' ? 
+            history === '/selecionar-cliente' ? 
               ""
             :
             <>

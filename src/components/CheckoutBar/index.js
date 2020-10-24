@@ -18,7 +18,7 @@ export default function Index(props) {
       onClick={props.ativedClient ? () => saveClients() : ''}
      >
       
-      <h6>{props.quant} clientes selecionados</h6>
+  <h6>{props.quant} {props.checkoutTitle}</h6>
         
       <div>
         <h6>Avançar</h6>

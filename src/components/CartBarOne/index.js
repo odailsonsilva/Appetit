@@ -24,7 +24,7 @@ function Index(props) {
   }
 
  function handleClickRemove(){
-    if(quant == 1){
+    if(quant === 1){
       setQuant(1)
     }else{
       setQuant(quant - 1)
