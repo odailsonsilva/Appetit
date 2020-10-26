@@ -11,6 +11,13 @@ export const Container = styled(Link)`
   align-items: center;
   color: #000;
 
+
+  span.price{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
   
   
   input[type="checkbox"]{

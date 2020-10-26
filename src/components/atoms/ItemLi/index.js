@@ -32,7 +32,8 @@ function Index({product, select}, props) {
       to={`/detalhes-do-produto/${product.id}`} 
     >
       <input type="checkbox" id={product.id} checked={productParse} className="checkbox_class" value={product.id}/>
-      <label htmlFor={product.id}>{product.title}</label>          
+      <label htmlFor={product.id}>{product.title}</label>
+      <span className="price">{((product.price).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))}</span>     
     </Container>
     {
           product.x ? ''  :  <div className="divisor_li"></div>
