@@ -35,10 +35,18 @@ export const CheckoutList = styled.ul`
         color: rgba(0, 0, 0, 0.87);
         margin-bottom: 16px;
     }
+
+    p.descrition{
+       font-size: 1.6rem;
+       line-height: 2.4rem;
+       color: rgba(0, 0, 0, 0.56);
+
+       margin-top: 0;
+    }
 `
 
 export const CheckoutItem = styled.li`
-   margin:16px 0 24px;
+   margin:16px 0 16px;
    display: flex;
    justify-content: space-between;
    align-self: center;

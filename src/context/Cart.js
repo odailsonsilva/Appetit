@@ -5,7 +5,7 @@ export const CartContext = createContext()
 //cria o provedor 
 export default function CartProvider({children}){//children == tudo que ficar dentro dele
     const [cart, setCart] = useState([])
-    const [aux, setAux] = useState({})
+    const [valueObs, setValueObs] = useState()
     const [totalValue, setTotalValue] = useState()
     const [subTotal, setSubTotal] = useState()
     const [quanti, setQuanti] = useState()
@@ -25,7 +25,7 @@ export default function CartProvider({children}){//children == tudo que ficar de
         item.quanti = quanti
         item.subTotal = subTotal
         item.subTotalFormt = ((subTotal).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
-
+        item.valueObs = valueObs
         localStorage.setItem(`setProducts${item.id}`, JSON.stringify(item));
 
         newCart.push(item)
@@ -45,7 +45,9 @@ export default function CartProvider({children}){//children == tudo que ficar de
         totalValue,
         setQuanti,
         setSubTotal,
-        quanti
+        quanti,
+        setValueObs,
+        valueObs
     }
 
     return (

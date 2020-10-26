@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import './style.css';
 
 import Header from '../../components/Header'
 import BoxInput from '../../components/BoxRadio'
 import CartBarOne from '../CartBarOne'
 
+import { CartContext} from '../../context/Cart'
+
 function PainelTwo(props) {
+  const {setValueObs} = useContext(CartContext)
+
+
   const cartClient = localStorage.getItem("cartClient");
   const clientParse = JSON.parse(cartClient);
   const price = clientParse.price
@@ -19,6 +24,10 @@ function PainelTwo(props) {
     setValueInput(value)
   }
   
+  const handleInputObs = (e) => {
+    const value = e.target.value
+    setValueObs(value)
+  }
   return (
       <div className="scrollE">
         <div className="header_container_painel_two">
@@ -42,8 +51,8 @@ function PainelTwo(props) {
 
           <div className="product_type" >
             <BoxInput 
-            radio_name_one="Milho" 
-            radio_name_two="Arroz" 
+            radio_name_one={clientParse.option[0]} 
+            radio_name_two={clientParse.option[1]}  
             handleChange={handleClickRadio}
             ></BoxInput>
           </div>
@@ -54,7 +63,7 @@ function PainelTwo(props) {
 
         <div className="comments_area">
           <p>Observações</p>
-          <input type="text" placeholder="Observações"/>
+          <input type="text" placeholder="Observações" onChange={handleInputObs}/>
         </div>  
         
         <CartBarOne displayB={!valueInput ? true : false}/>

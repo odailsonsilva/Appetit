@@ -35,18 +35,22 @@ function PainelCheckout(props) {
           <CheckoutList>
               <h4>Produtos</h4>
               {cart.map((item) => (
-                <CheckoutItem divisorTrue>
-                  <div>
-                    <img src={item.image} />
-                    <p className="checkoutP">{item.quanti}x {item.title}</p>
-                  </div>
-                  <span>{item.subTotalFormt}</span>
-                </CheckoutItem>
+                <>
+                  <CheckoutItem divisorTrue>
+                    <div>
+                      <img src={item.image} />
+                      <p className="checkoutP">{item.quanti}x {item.title}</p>
+                    </div>
+                    <span>{item.subTotalFormt}</span>
+                  </CheckoutItem>
+
+                  <p className="descrition">{item.valueObs}</p>
+                </>
               ))}
               <CheckoutItem divisorTrue>
                   
               </CheckoutItem>
-              <p>Não adicionar manteiga</p>
+             
           </CheckoutList>
 
             <div className="divisor"></div>
