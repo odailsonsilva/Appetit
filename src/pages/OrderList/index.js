@@ -60,8 +60,8 @@ class OrderList extends React.Component {
               />
               <BoxItem  
                 img={Client2}
-                title="titulo" 
-                text="paragrafo" 
+                title="Fernanda Siqueira" 
+                text="2x sanduíche de pão de arroz, vitamina de goiaba." 
                 value="R$ 3,50"
               />
               <BoxItem 
@@ -81,8 +81,8 @@ class OrderList extends React.Component {
               />
               <BoxItem  
                 img={Client2}
-                title="titulo" 
-                text="paragrafo" 
+                title="Luiz Oliveira" 
+                text="2x bolo frito, café c/ leite." 
                 value="R$ 3,50"
               />
               <BoxItem 

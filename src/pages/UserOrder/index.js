@@ -22,12 +22,12 @@ function NewOrder() {
             
             <HistoryOrder active date="13/05/2019">
               <BoxItem img="https://img.itdg.com.br/tdg/images/recipes/000/178/357/328308/328308_original.jpg?w=1200"               
-              title="titulo" text="paragrafo" value="R$ 3,50"/>
+              title="2x bolo frito, café c/ leite." text="R$ 3,50" value=''/>
             </HistoryOrder>
 
             <HistoryOrder active date="09/05/2019">
               <BoxItem  img="https://img.itdg.com.br/tdg/images/recipes/000/178/357/328308/328308_original.jpg?w=1200" 
-              title="titulo" text="paragrafo" value="R$ 3,50"/>
+              title="2x sanduíche de pão de arroz, vitamina de goiaba." text="R$ 10,50" value=""/>
             </HistoryOrder>
           </div>
         </div>
