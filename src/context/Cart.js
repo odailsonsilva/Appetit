@@ -26,7 +26,6 @@ export default function CartProvider({children}){//children == tudo que ficar de
         item.subTotal = subTotal
         item.subTotalFormt = ((subTotal).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
         item.valueObs = valueObs
-        item.priceFormat = ((item.price).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
         localStorage.setItem(`setProducts${item.id}`, JSON.stringify(item));
 
         newCart.push(item)
