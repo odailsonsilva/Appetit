@@ -24,6 +24,10 @@ function PainelPayment(props) {
     setSelectedDate(date)
   }
 
+  const handlePrev = () => {
+    localStorage.clear()
+  }
+
   return (
     <Container className="scrollE" >
 
@@ -61,7 +65,7 @@ function PainelPayment(props) {
        />
       </div>
       
-      <BtnFinish action="/feedback-do-pedido">
+      <BtnFinish action="/feedback-do-pedido" onClick={handlePrev}>
         <button disabled={!valueInput || !selectedDate}>
           {
             !valueInput || !selectedDate ? 'FINALIZAR' : 'SALVAR'

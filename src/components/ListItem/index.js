@@ -16,7 +16,7 @@ export default function Index(props) {
         }
       </ul>
     </div>
-    {props.divisor ? <div className="divisor_lists"></div> : ''}
+    {props.n_divisor ?  ""  : <div className="divisor_lists"></div>}
   </>
   )
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { CartContext} from '../../context/Cart'
 
 import { 
     Container,
@@ -17,6 +18,7 @@ function PainelCheckout(props) {
   const clientCart = localStorage.getItem("clients");
   const clientsParse = JSON.parse(clientCart);
   
+  const { cart, totalValue } = useContext(CartContext)
 
   return (
       <Container className="abstract_painel">
@@ -32,12 +34,17 @@ function PainelCheckout(props) {
 
           <CheckoutList>
               <h4>Produtos</h4>
-              <CheckoutItem divisorTrue>
+              {cart.map((item) => (
+                <CheckoutItem divisorTrue>
                   <div>
-                    <img src="https://abrilmdemulher.files.wordpress.com/2019/01/cuscuz-paulista-moderno.jpg?quality=90&strip=info&w=680&h=453&crop=1" />
-                    <p className="checkoutP">2x Cuscuz completo</p>
+                    <img src={item.image} />
+                    <p className="checkoutP">{item.quanti}x {item.title}</p>
                   </div>
-                  <span>R$ 3,25</span>
+                  <span>{item.subTotalFormt}</span>
+                </CheckoutItem>
+              ))}
+              <CheckoutItem divisorTrue>
+                  
               </CheckoutItem>
               <p>Não adicionar manteiga</p>
           </CheckoutList>
@@ -69,7 +76,7 @@ function PainelCheckout(props) {
           }
           <TotalContainer>
               <p>Total</p>
-              <p className="value">R$ 6,50</p>
+              <p className="value">{totalValue}</p>
           </TotalContainer>
       </Container>
   );

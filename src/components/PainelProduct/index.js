@@ -6,12 +6,19 @@ import BoxInput from '../../components/BoxRadio'
 import CartBarOne from '../CartBarOne'
 
 function PainelTwo(props) {
+  const cartClient = localStorage.getItem("cartClient");
+  const clientParse = JSON.parse(cartClient);
+  const price = clientParse.price
+
   const [valueInput, setValueInput] = useState(null)
+  const [valueFormat, setValueFormat] = useState(
+    (price).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+  )
 
   function handleClickRadio(value){
     setValueInput(value)
   }
- 
+  
   return (
       <div className="scrollE">
         <div className="header_container_painel_two">
@@ -26,10 +33,10 @@ function PainelTwo(props) {
           <p>{props.p}</p>
 
           <div className="product_detail_order">
-            <img src="https://abrilmdemulher.files.wordpress.com/2019/01/cuscuz-paulista-moderno.jpg?quality=90&strip=info&w=680&h=453&crop=1" alt=""/>
+            <img src={clientParse.image} alt=""/>
             <div>
-              <h6>Cuscuz completo</h6>
-              <p>R$ 3,25</p>
+              <h6>{clientParse.title}</h6>
+              <p>{valueFormat}</p>
             </div>
           </div>
 

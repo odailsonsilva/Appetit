@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import CheckboxImg from '../../assets/imgs/client-selected/checkbox.svg'
+import {Link} from 'react-router-dom'
 
-
-export const Container = styled.div`
+export const Container = styled(Link)`
   cursor: pointer;     
   width: 90%;
   height: 56px;
   display: flex;
   margin: 16px 0 16px;
   align-items: center;
+  color: #000;
+
+  
   
   input[type="checkbox"]{
     display: none;
@@ -21,6 +24,7 @@ export const Container = styled.div`
       vertical-align: middle;
       display: inline-block;
       margin: 0 8px 0 0;
+      border-radius: 50%;
     }
 
     &:checked + label:before{
@@ -31,6 +35,7 @@ export const Container = styled.div`
       vertical-align: middle;
       display: inline-block;
       margin: 0 8px 0 0;
+      background-color: ;
       border-radius: 50%;
     }
   }

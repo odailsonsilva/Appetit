@@ -1,23 +1,30 @@
-import React, {useState} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 
 import {Link} from 'react-router-dom'
 import {MdAdd, MdRemove} from 'react-icons/md'
 
 import {ContainerBar} from'./style'
 
+import { CartContext} from '../../context/Cart'
+
 
 function Index(props) {
-  const [quant, setQuant] = useState(1)
-  const [value, setValue] = useState(3.50)
-  const [valueFormat, setValueFormat] = useState(
-    (value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-  )
-  
+  const { add, setSubTotal, setQuanti} = useContext(CartContext)
 
+  const cartProduct = localStorage.getItem("cartClient");
+  const productParse = JSON.parse(cartProduct);
+  const price = productParse.price
+
+  const [quant, setQuant] = useState(1)
+  const [value, setValue] = useState(price)
+  const [valueFormat, setValueFormat] = useState(
+    (price).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+  )
+    
   function handleClickMore(){
     let q = quant + 1
 
-    let som = 3.50 * q
+    let som = price * q
     setValue(som)
     setQuant(q)
     setValueFormat((som).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
@@ -31,20 +38,25 @@ function Index(props) {
       if(quant >= 2){
         let q = quant - 1
 
-        let som = 3.50 * q
+        let som = price * q
         setValue(som)
         setQuant(q)
         setValueFormat((som).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
       }
       
     }
-    
   }
+
+  useEffect(()=> {
+    setSubTotal(value)
+    setQuanti(quant)
+  }, [value])
 
   return (
     <ContainerBar style={{
       display: props.displayB === true ? "none" : "flex"
-    }}>
+    }}
+    >
       <div className="btns-add-remove">
         <button>
         <MdRemove 
@@ -65,7 +77,9 @@ function Index(props) {
         </button>
       </div>
       
-      <Link to="/novo-pedido/checkout-product">
+      <Link to="/novo-pedido/checkout-product"
+        onClick={() => add(productParse)}
+      >
         Adicionar
           <span>{valueFormat}</span>
       </Link>
