@@ -2,10 +2,10 @@ import React from 'react'
 
 import {Container} from './styles'
 
-import HeaderImg from '../../components/HeaderImg'
-import PainelCheckout from '../../components/PainelCheckout'
-import PainelClient from '../../components/PainelClient'
-import SideBar from '../../components/SideBar/SideBar'
+import HeaderImg from '../../components/molecules/HeaderImg'
+import PainelCheckout from '../../components/organisms/PainelCheckout'
+import PainelClient from '../../components/organisms/PainelClient'
+import SideBar from '../../components/organisms/SideBar/SideBar'
 
 
 class ClientSelect extends React.Component {

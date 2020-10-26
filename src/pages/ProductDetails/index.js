@@ -2,10 +2,10 @@ import React from 'react';
 
 import  './style.css';
 
-import SideBar from '../../components/SideBar/SideBar'
-import HeaderImg from '../../components/HeaderImg'
-import Painel from '../../components/PainelD'
-import PainelProduct from '../../components/PainelProduct'
+import SideBar from '../../components/organisms/SideBar/SideBar'
+import HeaderImg from '../../components/molecules/HeaderImg'
+import Painel from '../../components/organisms/PainelD'
+import PainelProduct from '../../components/organisms/PainelProduct'
 
 function NewOrder(props) {
 

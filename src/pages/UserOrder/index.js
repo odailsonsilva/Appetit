@@ -1,10 +1,10 @@
 import React from 'react';
 
-import SideBar from '../../components/SideBar/SideBar'
-import BoxItem from '../../components/BoxItem'
-import Header from '../../components/Header'
-import HistoryOrder from '../../components/HistoryOrder'
-import HeaderImg from '../../components/HeaderImg'
+import SideBar from '../../components/organisms/SideBar/SideBar'
+import BoxItem from '../../components/atoms/BoxItem'
+import Header from '../../components/molecules/Header'
+import HistoryOrder from '../../components/molecules/HistoryOrder'
+import HeaderImg from '../../components/molecules/HeaderImg'
 
 import './style.css'
 

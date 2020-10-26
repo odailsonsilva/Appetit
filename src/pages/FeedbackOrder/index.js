@@ -12,8 +12,8 @@ import {
     BtnNew
 } from './styles';
 
-import SideBar from '../../components/SideBar/SideBar'
-import HeaderImg from '../../components/HeaderImg'
+import SideBar from '../../components/organisms/SideBar/SideBar'
+import HeaderImg from '../../components/molecules/HeaderImg'
 
 function FeedbackOrder() {
   return (

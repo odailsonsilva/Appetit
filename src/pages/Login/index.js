@@ -2,7 +2,7 @@ import React from 'react'
 
 import './style.css'
 
-import Input from '../../components/Input/Input'
+import Input from '../../components/atoms/Input/Input'
 import Logo from '../../assets/imgs/logo-fc.svg'
 
 class Index extends React.Component {

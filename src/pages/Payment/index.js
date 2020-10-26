@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import HeaderImg from '../../components/HeaderImg'
-import PainelCheckout from '../../components/PainelCheckout'
-import PainelPayment from '../../components/PainelPayment'
-import SideBar from '../../components/SideBar/SideBar'
+import HeaderImg from '../../components/molecules/HeaderImg'
+import PainelCheckout from '../../components/organisms/PainelCheckout'
+import PainelPayment from '../../components/organisms/PainelPayment'
+import SideBar from '../../components/organisms/SideBar/SideBar'
 
 
 

@@ -1,12 +1,12 @@
  import React from 'react';
 
-import SideBar from '../../components/SideBar/SideBar'
-import BoxItem from '../../components/BoxItem'
-import BtnAdd from '../../components/BtnAdd'
-import InputSearch from '../../components/InputSearch'
-import Header from '../../components/Header'
-import HistoryOrder from '../../components/HistoryOrder'
-import HeaderImg from '../../components/HeaderImg'
+import SideBar from '../../components/organisms/SideBar/SideBar'
+import BoxItem from '../../components/atoms/BoxItem'
+import BtnAdd from '../../components/atoms/BtnAdd'
+import InputSearch from '../../components/atoms/InputSearch'
+import Header from '../../components/molecules/Header'
+import HistoryOrder from '../../components/molecules/HistoryOrder'
+import HeaderImg from '../../components/molecules/HeaderImg'
 
 
 import Client1 from '../../assets/imgs/profile/client-1.svg'
